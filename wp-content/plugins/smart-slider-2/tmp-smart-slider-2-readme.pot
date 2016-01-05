@@ -1,0 +1,702 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Smart Slider 2"
+msgstr ""
+
+#. Short description.
+msgid "The perfect all-in-one responsive slider solution for WordPress."
+msgstr ""
+
+#. Screenshot description.
+msgid "Smart Slider 2 the perfect all-in-one responsive slider solution for WordPress."
+msgstr ""
+
+#. Screenshot description.
+msgid "Unlimited slider variations."
+msgstr ""
+
+#. Screenshot description.
+msgid "100% responsive slider"
+msgstr ""
+
+#. Screenshot description.
+msgid "Screenshot from the backend, which will help you through the set up process with easily understandable features."
+msgstr ""
+
+#. Found in description header.
+msgid "Most powerful features:"
+msgstr ""
+
+#. Found in description header.
+msgid "Why should you choose this slider?"
+msgstr ""
+
+#. Found in description header.
+msgid "Tutorial videos"
+msgstr ""
+
+#. Found in description header.
+msgid "What is included in the free version?"
+msgstr ""
+
+#. Found in description header.
+msgid "Why should you upgrade to Smart Slider Full version?"
+msgstr ""
+
+#. Found in description header.
+msgid "Support"
+msgstr ""
+
+#. Found in description list item.
+msgid "User-friendly administrator page with live preview"
+msgstr ""
+
+#. Found in description list item.
+msgid "Totally integrated with WordPress (media manager, short code, in-build widget)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Multilevel animation system: layer animation, main animation, background animation"
+msgstr ""
+
+#. Found in description list item.
+msgid "Slider generator: create a slider from an image folder"
+msgstr ""
+
+#. Found in description list item.
+msgid "100% responsive with each items (touch screen support for mobile devices)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Total control over the design, customize the slider without HTML or CSS knowledge. Change color, font, arrow, bullet, background, link, position, size, etc."
+msgstr ""
+
+#. Found in description list item.
+msgid "Slide layout creator: save and load your own slide design"
+msgstr ""
+
+#. Found in description list item.
+msgid "NEW: Quick slider for image sliders"
+msgstr ""
+
+#. Found in description list item.
+msgid "NEW: Slider dashboard"
+msgstr ""
+
+#. Found in description list item.
+msgid "NEW: Advanced responsive mode"
+msgstr ""
+
+#. Found in description list item.
+msgid "NEW: Import view"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.youtube.com/watch?v=WLR4ukKUsPk\">Navigation between sliders and slides</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.youtube.com/watch?v=dly1NSDCuew\">Layer slider: introducing to layers and items</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.youtube.com/watch?v=7H7Ldffyu6E\">The advanced responsive mode in the Smart Slider 2</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Because you get 4 extra slider types (full page, showcase, accordion horizontal and vertical)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Extra main and background animations (fade, vertical, 2D skitter and 3D animations)"
+msgstr ""
+
+#. Found in description list item.
+msgid "More than 20 layer animations (slide, fade, roll, bounce, Ken Burns etc.)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Plus 12 items to build better sliders (image, paragraph, youtube, vimeo, fade, flipper, flipper, HTML, caption etc.)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Plus 8 widget to customize your slider (vertical and horizontal thumbnail, gallery, bars, extra arrows and bullets, autoplay button and indicator, shadows and if it's not enough you can create own HTML)"
+msgstr ""
+
+#. Found in description list item.
+msgid "7 new slider generators (WordPress Post, NextGen Gallery, Facebook, Twitter, Flickr, Instagram, YouTube, if you need more write us)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Import and export sliders - our demo sliders also available"
+msgstr ""
+
+#. Found in description list item.
+msgid "and last but not least personal support!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"https://wordpress.org/plugins/smart-slider-3/\">Smart Slider 3</a> is available! It's a brand new plugin to create beautiful sliders in the next generation visual editor. <a href=\"https://wordpress.org/plugins/smart-slider-3/\">View Smart Slider 3</a>!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Smart Slider 2 comes with an intuitive interface for backend, which makes easy for anyone to design beautiful sliders in minutes. Grab a new layer, move it on the canvas, finally drag&amp;drop some items with your mouse and your slide is ready. Our customers highly recommend Smart Slider 2."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[youtube http://www.youtube.com/watch?v=PrHuat2KICA]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://www.nextendweb.com/demo/smartslider2/\">DEMO</a>  |  <a href=\"http://www.nextendweb.com/smart-slider/\">PRO VERSION PAGE</a>  |  <a href=\"http://www.nextendweb.com/wiki/smart-slider-documentation/\">DOCUMENTATION</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Because Smart Slider 2 is an all-in-one responsive slider solution. You can create a plenty of sliders. For example: image slider, layer slider, gallery slider, full page slider, full width slider, dynamic slider and so on... The admin interface help you to create anything, because you can add layers and create a really unique slider."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Check the full <a href=\"http://www.youtube.com/watch?v=qesNtYIBDfs&amp;list=PLSawiBnEUNfvCEnV5dGOAQABZ8TBx8fJg\">tutorial playlist</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You will be able to create new responsive sliders with simple slider type. You can add image, heading and button items into your slider also you can use slide background feature too. The main animations are limited to the horizontal animation, also the special background and the layer animations also limited. The free version will allow you to use arrow and bullet widgets."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Note: This plugin is provided as-is, but PAID version for this plugin is available with a ton of extra and new features!</strong> <a href=\"http://www.nextendweb.com/smart-slider/\">Upgrade to the Smart Slider 2 FULL version!</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "If you have any problem or feature request for this plugin, please feel free to <a href=\"http://www.nextendweb.com/help/contact/\">contact us</a>!"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the plugin through 'Plugins &gt; Add New &gt; Upload' interface or upload nextend-smart-slider2 folder to the '/wp-content/plugins/' directory."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the Smart Slider 2 plugin through the 'Plugins' menu in WordPress."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Create a new Smart Slider: Click on the 'Smart Slider 2 &gt; Sliders' menu, click on the create slider button. Firstly you should set the options of the slider, then add as many slide as you want. The slides can contain layers with items or just a simple background."
+msgstr ""
+
+#. Found in installation list item.
+msgid "In the 'Appearance &gt; Widgets' menu select the Smart Slider 2 widget and add to one of your widget areas. Select one of your slider, set the required settings and save your widget. Or just copy the shortcode from the slider and paste it into a post or a page."
+msgstr ""
+
+#. Found in installation paragraph, faq paragraph.
+msgid "<a href=\"http://www.nextendweb.com/wiki/smart-slider-documentation/\">Check our official documentation for more information</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Smart Slider 3 released"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "XSS security fix"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility fix: WordPress 4.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: PHP 5.1.x issue"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility fix: Page Builder by SiteOrigin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Slider align (Left, Center, Right)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: WordPress custom post type generator"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Relative image support"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Randomize"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Export as HTML"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Quick slider mode simplification"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Generator configuration moved into a sub view"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Lazy-loading"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Device specific images"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: small fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Quick image generator with extended fields"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Generator step-by-step view"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Layout normalization for generators"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Slider presets for generated sliders"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Background image resize modes: cover and contain"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: WordPress error checker added: checks for wp_head and wp_footer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Memory limit check for background image resize and fade in on load."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: New universal unzip method to give import wider PHP support"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: parse_ini_file function alternative added when the function disabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Custom zip algorithm for import and export"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Item optimizations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Generator field name normalization. Older field names are still available for compatibility, but better to use new ones as they are supported by the generator layouts."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Layer background color added"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Slide link can open in blank page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: 3D background animations are disabled in browsers when preserve-3d not available. Fallback is fade animation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Slider cache improved with fallbacks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Android phones linked items open fine for tap"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Advanced layer editor dimensions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Some small fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: New slider creation modes: Quick slider, Manual slider and Dynamic slider"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Import view on the admin site"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: New slider dashboard view"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Advanced responsive mode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Export as HTML"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: New cache system"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: All widget is separately manageable for every device"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Three new global fontsize for every devices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Autoplay and image item enabled in lite version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Resume autoplay on slide changed"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: WordPress 3.8 menu icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Variables in widget fixed in lite versions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Conflict with some themes/templates where * selector defined"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Facebook generator high res images in Post by page source"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Accordion slider's font"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Publish and unpublish dates are fixed on some MySQL versions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Important note: You might need to resposition your Arrow widgets vertically!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Variables in widget positions. Read more: http://www.nextendweb.com/wiki/smart-slider-documentation/widget-variables/"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Keyboard arrows are added to control the slides"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Windows 8 touch support added"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Tablet and mobile slider definitions in shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Thumbnail and bar font fixed in responsive mode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Swipe delay between swipes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Thumbnail widget fixed "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Language: French language added. Read more: http://www.nextendweb.com/wiki/smart-slider-documentation/translation/"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New sample sliders in free versions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Font manager improvements - slider specific font sets"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Slider/Slide/Font export and import"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified edit interface on the backend"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Vimeo improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "YouTube improvements in OSX Firefox"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New item options for onclick onmouseenter and onmouseleave JavaScript events"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improvements in animation system - no more stucked layers"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improvements in Gallery widget"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Some other smaller improvements in JavaScript files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New item: Shapes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New widget: Number bullets (Also text bullets modified)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Randomize slides"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Title attribute for image item"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Fade on scroll"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Autoplay repeat"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Auto thumbnail generation for thumbnail widgets from the background image"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Animation stuck with some animations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Pie chart error on IE 8 and lower"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Depreciated codes removed for WP 3.7.x compatibility"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Some other fixes and improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Cache time now can be static"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: JRoute error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Old jQuery on WordPress 3.4 and lower"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Shadow widget path"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Widget javascript error fixed"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: image generation error fixed when no margin defined"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Font error with d:;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: NextGen Gallery generator integration in PRO"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for Accordion slider type font error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Flashing on load bug solved with fade on load slider property"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: RTL support added"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Now you can add link to slides"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for a bug when stylesheet isn't displayed properly"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed attribute_escape as deprecated..."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for fonts"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved auto-update"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved readme.txt"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Live slide editor were not accessible on some system."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Slider can show up with fade after the page loaded - prevent glitches"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Shortcode list box doesn't show sliders when there were no slides"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: In WordPress 3.5.x and lower, you can't drag items into the layer, because the old jQuery UI. Fixed in this release."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Some template conflict"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release"
+msgstr ""
+
+#. Found in faq header.
+msgid "1. How do I add the slider to my site?"
+msgstr ""
+
+#. Found in faq header.
+msgid "2. What should I do when the slides/images appear under each other?"
+msgstr ""
+
+#. Found in faq header.
+msgid "3. What should I do when I see blank area where the slider should show or the slider doesn't work?"
+msgstr ""
+
+#. Found in faq header.
+msgid "4. What should I do when I experience any problem?"
+msgstr ""
+
+#. Found in faq header.
+msgid "5. Why should I upgrade the slider to FULL version?"
+msgstr ""
+
+#. Found in faq header.
+msgid "6. Is Smart Slider 2 is totally responsive?"
+msgstr ""
+
+#. Found in faq header.
+msgid "7. Can I customize the fonts of the slider?"
+msgstr ""
+
+#. Found in faq header.
+msgid "8. Can I show multiple instances of slider on one page?"
+msgstr ""
+
+#. Found in faq header.
+msgid "9. How to upgrade to FULL version of the slider?"
+msgstr ""
+
+#. Found in faq header.
+msgid "10. How to include a slider in a post or a page?"
+msgstr ""
+
+#. Found in faq header.
+msgid "11. How to include a slider into header.php or other PHP files?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can add your slider via the widget control panel or by shortcode."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Usually it means that Smart Slider can't load the required stylesheets into your site. Try to set \"CSS and Javascript load mode\" mode into 'Alternative #1' and see if it works for you. <a href=\"http://www.nextendweb.com/wiki/nextend-framework-documentation/configuration-wordpress/\">See this option in the documentation</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If it doesn't work, feel free to <a href=\"http://www.nextendweb.com/smart-slider/#support\">contact us!</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "It means that there is a JavaScript error on your site which blocks other scripts(for example Smart Slider's scripts). You can open up the browser debugger window with F12 button and check the console if it shows error or not. If you solve these errors Smart Slider should work fine."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Usual problem is that you have the latest WordPress version, but your theme loads very old jQuery version (1.7 or older) and the WordPress admin bar throws a JavaScript error. In this case, you have to remove the old jQuery from your theme's functions.php."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If you are unable to solve these problems, feel free to <a href=\"http://www.nextendweb.com/smart-slider/#support\">contact us!</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<a href=\"http://www.nextendweb.com/smart-slider/#support\">Contact us!</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Because it has a plenty of extra setting, new slider type, new slider animations, new items, new slider generators and new items. Also includes personal support because we know if you have a problem with a menu you need a solution as soon as possible."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Smart Slider 2 is 100% responsive with each items, so it will fit perfectly into your page, regardless of the size of your desktop screen or device."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes you can customize everything for every state. (hover, active, opened) The slider comes with Google Web Font support, allowing you to pick from over a dozen font families. To make using Google Fonts even easier, we have created a font manager interface that simplifies the process and preview it."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes you can use multiple slider widgets and slider shortcodes."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If you installed this version, then you have to deactivate and delete it, then install the FULL slider version! Our system keep your previously created sliders."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Or you can get the shortcode - <a href=\"http://www.nextendweb.com/wp-content/uploads/2013/09/shortcodemethod.png\">View</a>"
+msgstr ""

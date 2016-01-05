@@ -1,0 +1,661 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HealthandCARE\n"
+"POT-Creation-Date: 2015-10-27 16:49+0200\n"
+"PO-Revision-Date: 2016-01-01 16:42+1000\n"
+"Last-Translator: \n"
+"Language-Team: AncoraThemes\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-KeywordsList: _e;gettext;gettext_noop;__;_x;_n_noop\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: fw/core/core.admin.php:160 fw/lib/tgm/class-tgm-plugin-activation.php:165
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "Эта тема требует установки плагина: %1$s."
+
+#: fw/core/core.admin.php:161 fw/lib/tgm/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "Эта тема требует установки плагинов: %1$s."
+
+#: fw/core/core.admin.php:162 fw/lib/tgm/class-tgm-plugin-activation.php:167
+#, php-format
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgstr "Извините, но у вас недостаточно прав для установки плагина %s. Свяжитесь с администратором сайта."
+
+#: fw/core/core.admin.php:163 fw/lib/tgm/class-tgm-plugin-activation.php:168
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "Деактивирован необходимый плагин: %1$s."
+
+#: fw/core/core.admin.php:164 fw/lib/tgm/class-tgm-plugin-activation.php:169
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "Деактивирован рекомендуемый плагин: %1$s."
+
+#: fw/core/core.admin.php:165 fw/lib/tgm/class-tgm-plugin-activation.php:170
+#, php-format
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgstr "Извините, но у вас недостаточно прав для активации плагина %s. Свяжитесь с администратором сайта."
+
+#: fw/core/core.admin.php:166 fw/lib/tgm/class-tgm-plugin-activation.php:171
+#, php-format
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr "Требуется обновить следующий плагин: %1$s."
+
+#: fw/core/core.admin.php:167 fw/lib/tgm/class-tgm-plugin-activation.php:172
+#, php-format
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgstr "Извините, но у вас недостаточно прав для обновления плагина %s. Свяжитесь с администратором сайта."
+
+#: fw/core/core.admin.php:168 fw/lib/tgm/class-tgm-plugin-activation.php:173
+msgid "Begin installing plugin"
+msgstr "Плагин устанавливается"
+
+#: fw/core/core.admin.php:169
+msgid "Activate installed plugin"
+msgstr "Плагин активируется"
+
+#: fw/core/core.customizer/core.customizer.demo.php:2
+msgid "Pin/Unpin demo-block by the right side of the window"
+msgstr "Закрепить/Открепить демо-блок на правой стороне окна"
+
+#: fw/core/core.customizer/core.customizer.php:176
+msgid "You cannot delete last color scheme!"
+msgstr "Нельзя удалить последнюю цветовую схему"
+
+#: fw/core/core.customizer/core.customizer.php:178
+#: fw/core/core.customizer/core.customizer.php:225
+#, php-format
+msgid "Color Scheme %s not found!"
+msgstr "Цветовая схема %s не найдена"
+
+#: fw/core/core.customizer/core.customizer.php:298
+#, php-format
+msgid "Color scheme \"%s\""
+msgstr "Цветовая схема \"%s\""
+
+#: fw/core/core.customizer/core.customizer.php:299
+#, php-format
+msgid "Specify the color for each element in the schema \"%s\". After that you will be able to use your color scheme for the entire page, any part thereof and/or for the shortcodes!"
+msgstr "Установите цвет каждого элемента схемы \"%s\". "
+
+#: fw/core/core.importer/core.importer.php:269
+#, php-format
+msgid "Import posts completed by %s"
+msgstr "Импорт сообщений завершен %s"
+
+#: fw/core/core.importer/core.importer.php:270
+#, php-format
+msgid "Continue import (from ID=%s)"
+msgstr "Продолжить импорт (из ID =%s)"
+
+#: fw/core/core.importer/core.importer.php:456
+#, php-format
+msgid "Import progress: %s."
+msgstr "Импорт идет: %s."
+
+#: fw/core/core.importer/core.importer.php:494
+#, php-format
+msgid "Continue Import from ID=%d"
+msgstr "Продолжить импорт из ID=%d"
+
+#: fw/core/core.importer/core.importer.php:741
+#, php-format
+msgid "Slider \"%s\":"
+msgstr "Слайдер \"%s\":"
+
+#: fw/core/core.importer/core.importer.php:760
+#, php-format
+msgid "Can not locate Revo plugin: %s"
+msgstr "Невозможно найти Revo плагин: %s"
+
+#: fw/core/core.importer/core.importer.php:777
+#, php-format
+msgid "Ess.Grid \"%s\":"
+msgstr ""
+
+#: fw/core/core.importer/core.importer.php:864
+#, php-format
+msgid "Can not locate Essential Grid plugin: %s"
+msgstr "Невозможно найти Essential Grid плагин: %s"
+
+#: fw/core/core.importer/wordpress-importer.php:156
+#, php-format
+msgid "Import posts %s ..."
+msgstr "Импорт сообщений %s ..."
+
+#: fw/core/core.importer/wordpress-importer.php:156
+#, php-format
+msgid "(continue from ID = %s)"
+msgstr "(далее с ID = %s)"
+
+#: fw/core/core.importer/wordpress-importer.php:164
+#, php-format
+msgid "Error while import: %s"
+msgstr "Ошибка импорта: %s"
+
+#: fw/core/core.importer/wordpress-importer.php:324
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr "Чтобы сделать это проще для вас, для редактирования и сохранения импортированного содержания, вы можете переназначить автора импортного пункта существующему пользователю данного сайта. Например, вы можете импортировать все записи как записи <code>admin</code>."
+
+#: fw/core/core.importer/wordpress-importer.php:356
+msgid "Import author:"
+msgstr "Импорт автор:"
+
+#: fw/core/core.importer/wordpress-importer.php:367
+msgid "or create new user with login name:"
+msgstr "или зарегистрироваться новому пользователю с именем входа:"
+
+#: fw/core/core.importer/wordpress-importer.php:370
+msgid "as a new user:"
+msgstr "в качестве нового пользователя:"
+
+#: fw/core/core.importer/wordpress-importer.php:378
+msgid "assign posts to an existing user:"
+msgstr "назначить на сообщения существующего пользователя:"
+
+#: fw/core/core.importer/wordpress-importer.php:380
+msgid "or assign posts to an existing user:"
+msgstr "или назначить на сообщения существующего пользователя:"
+
+#: fw/core/core.importer/wordpress-importer.php:985
+#, php-format
+msgid "Menu item \"%s\" (id=%s) skipped due to missing menu slug"
+msgstr "Пункт меню \"%s\" (id=%s) пропускается из-за отсутствия наименования"
+
+#: fw/core/core.importer/wordpress-importer.php:1231
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr "Удаленный файл слишком большой, ограничение %s"
+
+#: fw/core/core.lists.php:23
+#, php-format
+msgid "Style %d"
+msgstr "Стиль %d"
+
+#: fw/core/core.messages.php:107
+msgid "Add the bookmark"
+msgstr "Добавить закладку"
+
+#: fw/core/core.messages.php:108
+msgid "Current page has been successfully added to the bookmarks. You can see it in the right panel on the tab 'Bookmarks'"
+msgstr "Текущая страница успешно добавлен в закладки. Вы можете увидеть ее в правой панели на вкладке \"Закладки\""
+
+#: fw/core/core.messages.php:109
+msgid "Delete this bookmark"
+msgstr "Удалить закладку"
+
+#: fw/core/core.messages.php:110
+msgid "Enter bookmark title"
+msgstr "Введите название закладки"
+
+#: fw/core/core.messages.php:111
+msgid "Current page already exists in the bookmarks list"
+msgstr "Текущая страница уже существует в списке закладок"
+
+#: fw/core/core.messages.php:112
+msgid "Error occurs in AJAX search! Please, type your query and press search icon for the traditional search way."
+msgstr "Ошибка в поисках AJAX! Пожалуйста, введите свой запрос и нажмите значок поиска для традиционного поиска пути."
+
+#: fw/core/core.messages.php:113
+#, php-format
+msgid "On the e-mail address <b>%s</b> we sent a confirmation email.<br>Please, open it and click on the link."
+msgstr "На адрес электронной почты <b>%s</b>  мы послали по электронной почте подтверждение. <br> Пожалуйста, откройте его и нажмите на ссылку."
+
+#: fw/core/core.messages.php:114
+msgid "Thanks for your vote! New average rating is:"
+msgstr "Спасибо за ваш голос! Новый средний рейтинг:"
+
+#: fw/core/core.messages.php:115
+msgid "Error saving your vote! Please, try again later."
+msgstr "Ошибка при сохранении свой голос! Пожалуйста, повторите попытку позже."
+
+#: fw/core/core.messages.php:116
+msgid "Error saving your like! Please, try again later."
+msgstr "Ошибка сохранения вашего лайка! Пожалуйста, повторите попытку позже."
+
+#: fw/core/core.messages.php:117
+msgid "Global error text"
+msgstr "Текст глобальной ошибки"
+
+#: fw/core/core.messages.php:118
+msgid "The name can't be empty"
+msgstr "Имя не может быть пустым"
+
+#: fw/core/core.messages.php:119
+msgid "Too long name"
+msgstr "Слишком длинное имя"
+
+#: fw/core/core.messages.php:120
+msgid "Too short (or empty) email address"
+msgstr "Слишком короткий (или пусто) адрес электронной почты"
+
+#: fw/core/core.messages.php:121
+msgid "Too long email address"
+msgstr "Слишком длинный адрес электронной почты"
+
+#: fw/core/core.messages.php:122
+msgid "Invalid email address"
+msgstr "Неверный адрес электронной почты"
+
+#: fw/core/core.messages.php:123
+msgid "The subject can't be empty"
+msgstr "Объект не может быть пустым"
+
+#: fw/core/core.messages.php:124
+msgid "Too long subject"
+msgstr "Слишком длинная тема"
+
+#: fw/core/core.messages.php:125
+msgid "The message text can't be empty"
+msgstr "Текст сообщения не может быть пустым"
+
+#: fw/core/core.messages.php:126
+msgid "Too long message text"
+msgstr "Слишком длинный текст сообщения"
+
+#: fw/core/core.messages.php:127
+msgid "Send message complete!"
+msgstr "Отправить сообщение полный!"
+
+#: fw/core/core.messages.php:128
+msgid "Transmit failed!"
+msgstr "Передача не удалась!"
+
+#: fw/core/core.messages.php:129
+msgid "The Login field can't be empty"
+msgstr "Поле логина не может быть пустым"
+
+#: fw/core/core.messages.php:130
+msgid "Too long login field"
+msgstr "Слишком длинный логин"
+
+#: fw/core/core.messages.php:131
+msgid "Login success! The page will be reloaded in 3 sec."
+msgstr "Вы успешно вошли! Страница будет перезагружена в 3 сек."
+
+#: fw/core/core.messages.php:132
+msgid "Login failed!"
+msgstr "Ошибка входа!"
+
+#: fw/core/core.messages.php:133
+msgid "The password can't be empty and shorter then 4 characters"
+msgstr "Пароль не может быть пустым и короче 4 символов"
+
+#: fw/core/core.messages.php:134
+msgid "Too long password"
+msgstr "Слишком длинный пароль"
+
+#: fw/core/core.messages.php:135
+msgid "The passwords in both fields are not equal"
+msgstr "Пароли в обоих полях не равны"
+
+#: fw/core/core.messages.php:136
+msgid "Registration success! Please log in!"
+msgstr "Вы успешно зарегистрировались! Пожалуйста, войдите!"
+
+#: fw/core/core.messages.php:137
+msgid "Registration failed!"
+msgstr "Регистрация не удалась!"
+
+#: fw/core/core.messages.php:138
+msgid "Geocode was not successful for the following reason:"
+msgstr "Геокод не был успешным по следующим причинам:"
+
+#: fw/core/core.messages.php:139
+msgid "Google map API not available!"
+msgstr "Google Map API, не доступен!"
+
+#: fw/core/core.messages.php:140
+msgid "Post content saved!"
+msgstr "Содержание сообщения сохраняется!"
+
+#: fw/core/core.messages.php:141
+msgid "Error saving post data!"
+msgstr "Сохранения почтовых данных!"
+
+#: fw/core/core.messages.php:142
+msgid "You really want to delete the current post?"
+msgstr "Вы действительно хотите удалить текущий пост?"
+
+#: fw/core/core.messages.php:143
+msgid "Delete post"
+msgstr "Удалить пост"
+
+#: fw/core/core.messages.php:144
+msgid "Post deleted!"
+msgstr "Сообщение удалено!"
+
+#: fw/core/core.messages.php:145
+msgid "Error deleting post!"
+msgstr "Ошибка удаления поста!"
+
+#: fw/core/core.messages.php:146 templates/_parts/editor-area.php:28
+msgid "Cancel"
+msgstr "Отмена"
+
+#: fw/core/core.messages.php:147
+msgid "Close"
+msgstr "Закрыть"
+
+#: fw/core/core.options/core.options.php:54
+msgid "Global Options"
+msgstr "Глобальные настройки"
+
+#: fw/core/core.shortcodes/shortcodes.php:1126
+#, php-format
+msgid "Site %s - Contact form message from %s"
+msgstr "Сайт %s  - сообщение, отправленное с помощью формы обратной связи от %s"
+
+#: fw/core/core.shortcodes/shortcodes.php:1134
+#, php-format
+msgid "Site %s - Custom form data"
+msgstr "Сайт %s - Данные формы обратной связи"
+
+#: fw/core/core.shortcodes/shortcodes_settings.php:274
+#: fw/core/core.shortcodes/shortcodes_vc.php:408
+msgid "Description for the popup (then hover on the icon). You can use:<br>'{{' and '}}' - to make the text italic,<br>'((' and '))' - to make the text bold,<br>'||' - to insert line break"
+msgstr "Описание для всплывающего окна (затем наведите на значок). Вы можете использовать: <br>'{{' and '}}' - сделать текст курсивом, <br>'((' and '))' - сделать текст жирным, <br>'||' -  вставить разрыв строки"
+
+#: fw/core/core.users.php:113
+#, php-format
+msgid "Please, enter your %s link"
+msgstr "Пожалуйста, введите %s ссылку"
+
+#: fw/core/core.wp.php:173
+#, php-format
+msgid "All %s"
+msgstr "Все %s"
+
+#: fw/core/core.wp.php:645
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#: fw/core/core.wp.php:660 fw/core/core.wp.php:687 fw/core/core.wp.php:702
+#, php-format
+msgid "View posts for %1$s %2$s"
+msgstr "Посмотреть сообщения за %1$s %2$s"
+
+#: fw/core/core.wp.php:2047
+#, php-format
+msgid "Site %s - New user registration: %s"
+msgstr "Сайт %s - Регистрация нового пользователя: %s"
+
+#: fw/core/core.wp.php:2061
+#, php-format
+msgid "Welcome to \"%s\""
+msgstr "Добро пожаловать на \"%s\""
+
+#: fw/core/plugin.woocommerce.php:428
+msgid "Show products as thumbs"
+msgstr "Показать товары как иконки"
+
+#: fw/core/plugin.woocommerce.php:429
+msgid "Show products as list"
+msgstr "Показать товары в виде списка"
+
+#: fw/core/type.clients.php:41
+msgid "Clients"
+msgstr "Клиенты"
+
+#: fw/core/type.clients.php:42
+msgid "Client"
+msgstr "Клиент"
+
+#: fw/core/type.clients.php:79
+msgid "Clients Group"
+msgstr "Группа клиентов"
+
+#: fw/core/type.clients.php:80 fw/core/type.services.php:80
+#: fw/core/type.team.php:122 fw/core/type.testimonials.php:103
+msgid "Group"
+msgstr "Группа"
+
+#: fw/core/type.post.php:362
+#, php-format
+msgid "Author page: %s"
+msgstr "Страница автора: %s"
+
+#: fw/core/type.services.php:41
+msgid "Services"
+msgstr "Услуги"
+
+#: fw/core/type.services.php:42
+msgid "Service item"
+msgstr "Услуга"
+
+#: fw/core/type.services.php:79
+msgid "Services Group"
+msgstr "Группа услуг"
+
+#: fw/core/type.team.php:83
+msgid "Team"
+msgstr "Коллектив"
+
+#: fw/core/type.team.php:84
+msgid "Team member"
+msgstr "Сотрудник"
+
+#: fw/core/type.team.php:121
+msgid "Team Group"
+msgstr "Отделение"
+
+#: fw/core/type.testimonials.php:66
+msgid "Testimonials"
+msgstr "Отзывы"
+
+#: fw/core/type.testimonials.php:67
+msgid "Testimonial"
+msgstr "Отзыв"
+
+#: fw/core/type.testimonials.php:102
+msgid "Testimonials Group"
+msgstr "Группа отзывов"
+
+#: fw/lib/tgm/class-tgm-plugin-activation.php:174
+msgid "Begin activating plugin"
+msgstr "Начало активации плагина"
+
+#: fw/tools/emailer/emailer.php:67
+msgid "Emailer"
+msgstr "Сервис отпраки сообщений"
+
+#: fw/tools/emailer/emailer.php:327
+#, php-format
+msgid "Site %s - Subscribe confirmation"
+msgstr "Сайт %s - информация о подписке"
+
+#: fw/tools/emailer/emailer.php:330
+#, php-format
+msgid ""
+"You or someone else added this e-mail address into our subcribtion list.\n"
+"Please, confirm your wish to receive newsletters from our website by clicking on the link below:\n"
+"\n"
+"<a href=\"%s\">%s</a>\n"
+"\n"
+"If you do not wiish to subscribe to our newsletters, simply ignore this message."
+msgstr ""
+"Вы или кто-то еще добавили эту электронную почту в нашем списке subcribtion.\n"
+"Пожалуйста, подтвердите свое желание получать рассылку новостей с нашего сайта, нажав на ссылку ниже: \n"
+"\n"
+"<a href=\"%s\">%s</a>\n"
+"\n"
+"Если вы не желаете подписаться на нашу рассылку, просто проигнорируйте это сообщение."
+
+#: fw/tools/emailer/emailer.php:363
+msgid "Confirmation complete! E-mail address succefully added in the subscribers list!"
+msgstr "Подтверждение завершено! Адрес электронной почты успешно добавлен в список подписчиков!"
+
+#: fw/tools/emailer/emailer.php:366
+msgid "Bad confirmation code!"
+msgstr "Неверный код подтверждения!"
+
+#: fw/tools/emailer/emailer.php:369
+msgid "E-mail address already exists in the subscribers list!"
+msgstr "Адрес электронной почты уже существует в списке абонентов!"
+
+#: fw/tools/po_composer/po_composer.php:61
+msgid "PO Composer"
+msgstr ""
+
+#: fw/tools/po_composer/po_composer.php:276
+#, php-format
+msgid "Language file \"<b>%s.po</b>\" was updated!"
+msgstr "Языковой файл \"<b>%s.po</b>\" был обновлен!"
+
+#: fw/tools/po_composer/po_composer.php:280
+#, php-format
+msgid "Language file \"<b>%s.mo</b>\" was generated!"
+msgstr "Языковой файл \"<b>%s.mo</b>\" был создан!"
+
+#: fw/tools/po_composer/po_composer.php:283
+#, php-format
+msgid "Error writing in language file \"<b>%s.po</b>\"!<br>Please, copy text from textarea below and paste it in the .po-file manually<br>or use links to upload .po and .mo files below the text area!"
+msgstr "Ошибка записи в файл языка \"<b>%s.po</b>\"!<br> Пожалуйста, скопируйте текст из текстового поля ниже и вставьте его в .po-файл вручную или использовать изображения ссылки для загрузки. ро и .mo файлы ниже текстовой области!"
+
+#: fw/tools/po_composer/po_composer.php:307
+#, php-format
+msgid "Error uploading or Empty .po-file: %s"
+msgstr "Подгрузка ошибке или пустой .po-файл: %s"
+
+#: fw/tools/po_composer/po_composer.php:324
+#, php-format
+msgid "Error loading or Empty .po-file: %s"
+msgstr "Ошибка при загрузке или Пустой .po-файл: %s"
+
+#: fw/widgets/advert.php:102
+msgid "Image source URL:<br />(leave empty if you paste advert code)"
+msgstr "Источник URL изображения: <br /> (оставьте пустым, если вы вставляете код объявлений)"
+
+#: fw/widgets/advert.php:115
+msgid "Image link URL:<br />(leave empty if you paste advert code)"
+msgstr "Ссылка URL изображения: <br /> (оставьте пустым, если вы вставляете код объявлений)"
+
+#: fw/widgets/flickr.php:111
+msgid "Flickr ID (<a href=\"http://www.idgettr.com\" target=\"_blank\">idGettr</a>):"
+msgstr ""
+
+#: fw/widgets/qrcode/qrcode.php:280
+msgid "Update"
+msgstr "Обновить"
+
+#: fw/widgets/socials.php:142
+msgid "Logo image:<br />(if empty - use logo from Theme Options)"
+msgstr "Изображение логотипа: <br /> (если пусто - будет использован логотип темы по умолчанию)"
+
+#: includes/theme.options.php:103
+msgid "Select body style:<br><b>boxed</b> - if you want use background color and/or image,<br><b>wide</b> - page fill whole window with centered content,<br><b>fullwide</b> - page content stretched on the full width of the window (with few left and right paddings),<br><b>fullscreen</b> - page content fill whole window without any paddings"
+msgstr "Выберите тип кузова: <br><b>boxed</b>- если вы хотите использовать цвет фона и / или изображение, <br><b>wide</b> - страница заполнить целое окно с центром содержания, <br><b>fullwide</b> - содержание страницы растягивается на всю ширину окна (с несколько левых и правых отступов), <br><b>fullscreen</b>  - содержимое страницы заполнения всего окна без каких-либо прокладок"
+
+#: includes/theme.options.php:424
+msgid "Fix menu position"
+msgstr "Закрепить положение меню"
+
+#: includes/theme.options.php:425
+msgid "Don't fix menu position"
+msgstr "Не закреплять положение меню"
+
+#: includes/theme.options.php:699
+msgid "Boxed"
+msgstr "Коробочная"
+
+#: includes/theme.options.php:2046
+msgid ""
+"Add button's code for each social share network.<br>\n"
+"\t\t\t\t\tIn share url you can use next macro:<br>\n"
+"\t\t\t\t\t<b>{url}</b> - share post (page) URL,<br>\n"
+"\t\t\t\t\t<b>{title}</b> - post title,<br>\n"
+"\t\t\t\t\t<b>{image}</b> - post image,<br>\n"
+"\t\t\t\t\t<b>{descr}</b> - post description (if supported)<br>\n"
+"\t\t\t\t\tFor example:<br>\n"
+"\t\t\t\t\t<b>Facebook</b> share string: <em>http://www.facebook.com/sharer.php?u={link}&amp;t={title}</em><br>\n"
+"\t\t\t\t\t<b>Delicious</b> share string: <em>http://delicious.com/save?url={link}&amp;title={title}&amp;note={descr}</em>"
+msgstr ""
+"Добавьте код кнопки для каждой социальной сети акций.<br>\n"
+"\t\t\t\t\В акции URL вы можете использовать следующий макрос:<br>\n"
+"\t\t\t\t\t<b>{url}</b> - Доля после (страница) URL-адрес,<br>\n"
+"\t\t\t\t\t<b>{title}</b> - Заголовок поста,<br>\n"
+"\t\t\t\t\t<b>{image}</b> - Сообщение Изображение,<br>\n"
+"\t\t\t\t\t<b>{descr}</b> - Описание сообщению (если поддерживается)<br>\n"
+"\t\t\t\t\tНапример:<br>\n"
+"\t\t\t\t\t<b>Facebook</b> строка Поделиться: <em>http://www.facebook.com/sharer.php?u={link}&amp;t={title}</em><br>\n"
+"\t\t\t\t\t<b>Delicious</b> строка Поделиться: <em>http://delicious.com/save?url={link}&amp;title={title}&amp;note={descr}</em>"
+
+#: includes/theme.options.php:2093
+msgid "Select icon and write share URL for desired social networks.<br><b>Important!</b> If you leave text field empty - internal theme link will be used (if present)."
+msgstr "Выберите значок и введите URL требуемых социальных сетях <br><b>Внимание! </b> Если оставить текстовое поле пустым, будет использоваться внутренняя ссылка темы"
+
+#: includes/theme.options.php:2107
+msgid ""
+"Put to this section Twitter API 1.1 keys.<br>\n"
+"\t\t\t\t\tYou can take them after registration your application in <strong>https://apps.twitter.com/</strong>"
+msgstr ""
+"Укажите в этом разделе Twitter API 1.1 ключи. <br> \n"
+"\t\t\t\t\t Они будут доступны после регистрации вашего приложения в <strong>https://apps.twitter.com/</strong>"
+
+#: includes/theme.options.php:2428
+msgid "Show additional filters (on post formats, tags and categories) in admin panel page \"Posts\". <br>Attention! If you have more than 2.000-3.000 posts, enabling this option may cause slow load of the \"Posts\" page! If you encounter such slow down, simply open Appearance - Theme Options - Service and set \"No\" for this option."
+msgstr "Показать дополнительные фильтры (о форматах почтовых, теги и категории) в админ-панели страницы \"Posts\". <br> Внимание! Если у вас больше чем 2 000 - 3000 сообщений, включение этой опции может привести к медленной загрузке \"Posts\" страницы! Если вы столкнулись с такой проблемой, просто откройте Внешний вид - Параметры темы - Услуги и установите \"No\" для этой опции."
+
+#: includes/theme.options.php:2449
+msgid "Show \"Install Dummy Data\" in the menu \"Appearance\". <b>Attention!</b> When you install dummy data all content of your site will be replaced!"
+msgstr "Показать \"Install Dummy Data\" в меню \"Appearance\". <b>Внимание!</b> При установке данных по умолчанию все содержимое вашего сайта будут заменено!"
+
+#: includes/theme.options.php:2478
+msgid "In debug mode we are using unpacked scripts and styles, else - using minified scripts and styles (if present). <b>Attention!</b> If you have modified the source code in the js or css files, regardless of this option will be used latest (modified) version stylesheets and scripts. You can re-create minified versions of files using on-line services (for example <a href=\"http://yui.2clics.net/\" target=\"_blank\">http://yui.2clics.net/</a>) or utility <b>yuicompressor-x.y.z.jar</b>"
+msgstr "В режиме отладки, мы используем распакованные скрипты и стили, иначе - с помощью уменьшенная скриптов и стилей (если имеется).<b>Внимание!</b> Если вы изменили исходный код в JS или CSS-файлов, независимо от этой опции будет использоваться последня (модифицированная) версия таблицы стилей и скриптов. Вы можете воссоздать уменьшенные версии файлов, используя он-лайн сервисы (например <a href=\"http://yui.2clics.net/\" target=\"_blank\">http://yui.2clics.net/</a>) или приложение <b>yuicompressor-x.y.z.jar</b>"
+
+#: includes/theme.options.php:2547
+#, php-format
+msgid "Wrong function name %s in the theme options array"
+msgstr "Неправильное имя функции %s в массиве опций темы"
+
+#: templates/404.php:37
+#, php-format
+msgid "Can't find what you need? Take a moment and do a search below or start from <a href=\"%s\">our homepage</a>."
+msgstr "Не можете найти то, что вам нужно? Найдите минутку, и сделайте поиск ниже или начните с <a href=\"%s\">ваша страница</a>."
+
+#: templates/_parts/counters.php:7
+#, php-format
+msgid "Views - %s"
+msgstr "Просмотров - %s"
+
+#: templates/_parts/counters.php:13
+#, php-format
+msgid "Comments - %s"
+msgstr "Комментариев - %s"
+
+#: templates/_parts/counters.php:20
+#, php-format
+msgid "Rating - %s"
+msgstr "Рейтинг - %s"
+
+#: templates/_parts/editor-area.php:27
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/_parts/reviews-block.php:45
+#, php-format
+msgid "Summary rating from <b>%s</b> user's marks."
+msgstr "Основная оценка от <b>%s</b>"
+
+#: templates/no-articles.php:31 templates/no-search.php:31
+#, php-format
+msgid "Go back, or return to <a href=\"%s\">%s</a> home page to choose a new page."
+msgstr "Вернуться назад или к <a href=\"%s\">%s</a> домашней странице, чтобы выбрать новую страницу."
+
+#: templates/no-search.php:29
+#, php-format
+msgid "Search: %s"
+msgstr "Поиск: %s"
+
