@@ -7,7 +7,7 @@
  */
 
 // Theme init
-if (!function_exists('healthandcare_post_type_theme_setup')) {
+/*if (!function_exists('healthandcare_post_type_theme_setup')) {
 	add_action( 'healthandcare_action_before_init_theme', 'healthandcare_post_type_theme_setup', 9 );
 	function healthandcare_post_type_theme_setup() {
 		if ( !healthandcare_options_is_used() ) return;
@@ -31,7 +31,7 @@ if (!function_exists('healthandcare_post_type_theme_setup')) {
 			);
 		}
 	}
-}
+}*/
 
 
 // Admin scripts

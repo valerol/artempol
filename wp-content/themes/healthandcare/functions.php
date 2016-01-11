@@ -49,7 +49,8 @@ if ( !function_exists( 'healthandcare_add_theme_sidebars' ) ) {
 			$theme_sidebars = array(
 				'sidebar_main'		=> esc_html__( 'Main Sidebar', 'healthandcare' ),
 				'sidebar_footer'	=> esc_html__( 'Footer Sidebar', 'healthandcare' ),
-				'sidebar_map'	=> esc_html__( 'Яндекс-карта' ),
+				'sidebar_frontpage'	=> esc_html__( 'Frontpage Sidebar', 'healthandcare' ),
+				'sidebar_frontpage_bottom'	=> esc_html__( 'Frontpage Bottom Sidebar', 'healthandcare' ),
 			);
 			if (healthandcare_exists_woocommerce()) {
 				$theme_sidebars['sidebar_cart']  = esc_html__( 'WooCommerce Cart Sidebar', 'healthandcare' );

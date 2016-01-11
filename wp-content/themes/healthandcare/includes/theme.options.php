@@ -667,7 +667,7 @@ if ( !function_exists( 'healthandcare_options_settings_theme_setup' ) ) {
 		// Customization -> Slider
 		//-------------------------------------------------
 		
-		"customization_slider" => array( 
+/*		"customization_slider" => array( 
 					"title" => esc_html__('Slider', 'healthandcare'),
 					"icon" => "iconadmin-picture",
 					"override" => "category,services_group,page",
@@ -867,7 +867,7 @@ if ( !function_exists( 'healthandcare_options_settings_theme_setup' ) ) {
 					"std" => 0,
 					"min" => 0,
 					"step" => 10,
-					"type" => "spinner"),
+					"type" => "spinner"),*/
 		
 		
 		

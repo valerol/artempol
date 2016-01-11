@@ -146,7 +146,9 @@ $video_bg_show  = healthandcare_get_custom_option('show_video_bg')=='yes' && (he
 			}
 			// Slider
 //			require_once( healthandcare_get_file_dir('templates/headers/_parts/slider.php') );
-                        echo do_shortcode('[smartslider2 slider="3"]');
+			if ( is_front_page() ) {
+				echo do_shortcode('[smartslider2 slider="3"]');
+			}
 			// Top panel 'Below'
 			if ($top_panel_position == 'below') {
 				healthandcare_show_post_layout(array(

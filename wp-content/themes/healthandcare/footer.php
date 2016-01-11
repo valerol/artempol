@@ -162,11 +162,10 @@ global $HEALTHANDCARE_GLOBALS;
                                 }
                         }*/
                         
-                        // Yandex map
-                        $map_show = healthandcare_get_custom_option('show_googlemap');
-			$sidebar_name = 'sidebar_map';
-			if ( $map_show == 'yes' && is_active_sidebar( $sidebar_name ) ) {
-				$HEALTHANDCARE_GLOBALS['current_sidebar'] = 'map';
+            // Yandex map
+			$sidebar_name = 'sidebar_frontpage_bottom';
+			if ( is_front_page() && is_active_sidebar( $sidebar_name ) ) {
+				$HEALTHANDCARE_GLOBALS['current_sidebar'] = 'frontpage_bottom';
                                 ob_start();
                                 do_action( 'before_sidebar' );
                                 if ( !dynamic_sidebar($sidebar_name) ) {
@@ -179,22 +178,22 @@ global $HEALTHANDCARE_GLOBALS;
 			}
                         
                         
-                        if ( healthandcare_get_custom_option('show_footer_contact_form')=='yes' ) {
-                                echo healthandcare_do_shortcode('
-                                        [trx_content scheme="inherit" animation="none" class="footer_form_aplication"]
-                                        [trx_columns count="2" fluid="" id="" class="" animation="none" css="" width="" height="" top="" bottom="" left="" right=""]
-                                        [trx_contact_form custom="yes" style="2" align="center" title="contact us" animation="none" subtitle="Sed ut perspiciatis"]
-                                        [trx_column_item span="" align="none" color="" bg_color="" bg_image="" id="" class="" animation="none" css=""]
-                                        [trx_form_item type="text" name="Name *" value="Name *" label_position="top" animation="none"]
-                                        [trx_form_item type="text" name="Phone *" value="Phone *" label_position="top" animation="none"]
-                                        [trx_form_item type="text" name="Email *" value="Email *" label_position="top" animation="none"]
-                                        [/trx_column_item]
-                                        [trx_column_item span="" align="none" color="" bg_color="" bg_image="" id="" class="" animation="none" css=""]
-                                        [trx_form_item type="textarea" name="Message *" value="Message *" label_position="top" animation="none"]
-                                        [trx_form_item type="button" name="Send Message" value="Send Message" label_position="top" animation="none"]
-                                        [/trx_column_item][/trx_contact_form][/trx_columns][/trx_content]
-                                ');
-                        }
+			if ( healthandcare_get_custom_option('show_footer_contact_form')=='yes' ) {
+					echo healthandcare_do_shortcode('
+							[trx_content scheme="inherit" animation="none" class="footer_form_aplication"]
+							[trx_columns count="2" fluid="" id="" class="" animation="none" css="" width="" height="" top="" bottom="" left="" right=""]
+							[trx_contact_form custom="yes" style="2" align="center" title="contact us" animation="none" subtitle="Sed ut perspiciatis"]
+							[trx_column_item span="" align="none" color="" bg_color="" bg_image="" id="" class="" animation="none" css=""]
+							[trx_form_item type="text" name="Name *" value="Name *" label_position="top" animation="none"]
+							[trx_form_item type="text" name="Phone *" value="Phone *" label_position="top" animation="none"]
+							[trx_form_item type="text" name="Email *" value="Email *" label_position="top" animation="none"]
+							[/trx_column_item]
+							[trx_column_item span="" align="none" color="" bg_color="" bg_image="" id="" class="" animation="none" css=""]
+							[trx_form_item type="textarea" name="Message *" value="Message *" label_position="top" animation="none"]
+							[trx_form_item type="button" name="Send Message" value="Send Message" label_position="top" animation="none"]
+							[/trx_column_item][/trx_contact_form][/trx_columns][/trx_content]
+					');
+			}
 
                         // Copyright area
 			$copyright_style = healthandcare_get_custom_option('show_copyright_in_footer');
