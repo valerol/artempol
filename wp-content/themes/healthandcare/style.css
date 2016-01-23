@@ -49,6 +49,7 @@ Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-bac
 
 /* 1. Reset tags
 -------------------------------------------------------------- */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -289,8 +290,8 @@ iframe, video, embed {
 	line-height: inherit;
 	font-weight: inherit;
 	font-size: inherit;
+	margin: 0;
 	width:auto;
-	margin:0;
 }
 
 
@@ -610,10 +611,10 @@ label.required:after {
 
 /* Columns width */
 .column-1, .column-1_1, .column-2_2, .column-3_3, .column-4_4, .column-5_5, .column-6_6, .column-7_7, .column-8_8, .column-9_9, .column-10_10, .column-11_11, .column-12_12	{ width:100%; }
-.column-1_2, .column-2_4, .column-3_6, .column-4_8, .column-5_10, .column-6_12	{ width:50%; }
-.column-1_3, .column-2_6, .column-3_9, .column-4_12								{ width:33.33333333%; }
+.column-1_2, .column-2_4, .column-3_6, .column-4_8, .column-5_10, .column-6_12	{ width:49%; }
+.column-1_3, .column-2_6, .column-3_9, .column-4_12								{ width:33%; }
 .column-2_3, .column-4_6, .column-8_12											{ width:66.66666667%; }
-.column-1_4, .column-2_8, .column-3_12											{ width:25%; }
+.column-1_4, .column-2_8, .column-3_12											{ width:24%; }
 .column-3_4, .column-6_8, .column-9_12											{ width:75%; }
 .column-1_5, .column-2_10														{ width:20%; }
 .column-2_5, .column-4_10														{ width:40%; }
@@ -623,8 +624,8 @@ label.required:after {
 .column-5_6, .column-10_12														{ width:83.33333333%; }
 .column-1_7																		{ width:14.28571429%; }
 .column-2_7																		{ width:28.57142857%; }
-.column-3_7																		{ width:42.85714286%; }
-.column-4_7																		{ width:57.14285714%; }
+.column-3_7																		{ width:42%; }
+.column-4_7																		{ width:57%; }
 .column-5_7																		{ width:71.42857143%; }
 .column-6_7																		{ width:85.71428571%; }
 .column-1_8																		{ width:12.5%; }
@@ -3878,7 +3879,7 @@ blockquote cite {
 }
 footer.testimonials_wrap .sc_section_overlay,
 footer.twitter_wrap .sc_section_overlay {
-	padding: 3em 0;
+	padding: 1em 0;
 }
 
 
@@ -4819,7 +4820,7 @@ iframe[name="google_conversion_frame"] { height:1px; min-height:0px; display:non
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-dt, b, strong {	font-weight: 500; }
+/*dt, b, strong {	font-weight: 500; }*/
 h1+h2,h1+h3,h1+h4,h1+h5,h1+h6,
 h2+h3,h2+h4,h2+h5,h2+h6,
 h3+h4,h3+h5,h3+h6,
@@ -5040,7 +5041,7 @@ input[type="checkbox"]:checked + label:before {
 }
 .logo .logo_text {
     position: absolute;
-    top: 0.30769rem;
+#	 top: 0.30769rem;
     left: 3.84615rem;
 }
 .single-team .comments_form .comment-form .box_form_left,
@@ -6298,7 +6299,7 @@ button,
 .sc_contact_form form .sc_contact_form_item_text {
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 49.6%;
 }
 .sc_contact_form form .sc_contact_form_item_text:nth-child(odd) {
     padding-right: 0.76923rem;
@@ -6499,7 +6500,7 @@ div.sc_services .sc_services_item {
 .sc_services .sc_services_item .sc_services_item_title .sc_icon {
     position: absolute;
     border: 0;
-    top: 0.30769rem;
+    top: 1rem;
     left: 2.61538rem;
     color: #ffffff;
     font-size: 1.61538rem;
@@ -7166,27 +7167,27 @@ footer .contacts_address .address_right .btn_directions a:after {
     -o-transform: scale(1);
     transform: scale(1);
 }
-.home1_wide_block1 .column-1_3 {
-    padding-left: 5.38461rem;
+.home1_wide_block1 .column-1_2 {
+#    padding-left: 5.38461rem;
     position: relative;
 }
-.home1_wide_block1 .column-1_3 .sc_title {
+.home1_wide_block1 .column-1_2 .sc_title {
     position: static;
     line-height: 1;
     margin-bottom: 1.46153rem;
 }
-.home1_wide_block1 .column-1_3 .sc_title .sc_title_icon {
+.home1_wide_block1 .column-1_2 .sc_title .sc_title_icon {
     position: absolute;
     left: 0;
-    top: 0.23076rem;
+#    top: 0.23076rem;
     padding-left: 0.07692rem;
 }
-.home1_wide_block1 .column-2_3 .wpb_text_column p {
+.home1_wide_block1 .column-1_3 .wpb_text_column p {
     margin-top: 0.30769rem;
     line-height: 1.7;
     font-size: 1.154rem;
 }
-.home1_wide_block1 .column-2_3 .sc_button {
+.home1_wide_block1 .column-1_3 .sc_button {
     margin-top: 3.46153rem;
 }
 .post_info_share .sc_socials .sc_socials_item a {
@@ -7702,3 +7703,132 @@ footer .contacts_address .address_right .btn_directions a:after {
     background: none;
     padding: 0 3.07692rem 3.07692rem 3.07692rem;
 }
+
+/* artempol главная страница */
+
+.services, .greeting {
+	font-size: 1.1rem;
+}
+
+.list-icon ul {
+	list-style: none;
+	padding: 0;
+}
+
+.list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before {
+	margin: 0 5px 0 0;
+	color: #ff5b4f;
+}
+
+.sc_title {
+	padding-left: 5rem;
+}
+
+
+.sc_services_item .sc_icon:before {
+    font-size: 2.2857em;
+}
+
+/* artempol */
+
+.red {
+	color: #ff5b4f;
+}
+
+/* artempol награды на главной */
+
+.testimonials_wrap .slides {
+	text-align: center;
+}
+
+.testimonials_wrap .slide {
+	padding-top: 30px;
+}
+
+.testimonials_wrap .slides img {
+	height: 250px;
+	width: auto;
+}
+
+.testimonials_wrap .jssorb03 {
+	display: none;
+}
+
+.testimonials_wrap_inner {
+	background: url( '/wp-content/uploads/2016/01/img_parallax1.jpg' ) no-repeat scroll -500px 0;
+	padding: 0 !important;
+}
+
+/* artempol слайдер на главной */
+
+.slider_main_img {
+	left: -300px !important;
+}
+
+.tparrows {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    z-index: 100;
+    top: 50%;
+    line-height: 1rem;
+}
+
+.tp-leftarrow {
+	left: 3%;
+}
+
+.tp-rightarrow {
+	right: 3%;
+}
+
+.tp-bullets {
+	width: 76px; 
+	height: 16px; 
+	top: 90%;
+	left: 0px;
+	display: block;
+	position: absolute;
+	z-index: 1000;
+}
+
+.tp-bulletav {
+	border-color: #ffffff !important;
+}
+
+/* artempol форма обратной связи */
+
+.sc_contact_form input[type="text"], 
+.sc_contact_form input[type="email"],
+.sc_contact_form textarea {
+	width: 100% !important;
+}
+
+.sc_contact_form input[type="submit"] {
+	display: none;
+}
+
+.sc_contact_form .wpcf7-not-valid-tip,
+.sc_contact_form .wpcf7-validation-errors {
+	color: white !important;
+}
+
+/* artempol страница отделений */
+
+.content_wrap.branches .attachment-thumb {
+	float: left;
+	margin-right: 30px;
+}
+
+.doctor_info {
+	margin-top: 10px;
+}
+
+.doctor_info .post_title {
+	margin-top: 0;
+}
+
+
