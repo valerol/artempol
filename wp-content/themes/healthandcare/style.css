@@ -492,7 +492,7 @@ label.required:after {
 .gallery .gallery-item a img {
     border: none !important;
     display: block;
-    width: 100%;
+#    width: 100%;
 }
 .gallery .gallery-item .gallery-icon {
 	margin: 0 5px;
@@ -510,7 +510,7 @@ label.required:after {
 .gallery.gallery-columns-5 .gallery-item {	width: 20% !important; }
 .gallery.gallery-columns-4 .gallery-item {	width: 25% !important; }
 .gallery.gallery-columns-3 .gallery-item {	width: 33.3333% !important; }
-.gallery.gallery-columns-2 .gallery-item {	width: 50% !important; }
+/*.gallery.gallery-columns-2 .gallery-item {	width: 50% !important; }*/
 .gallery.gallery-columns-1 .gallery-item {	width: 100% !important; }
 .gallery.gallery-columns-9 .gallery-caption { font-size: 0.625em; }
 .gallery.gallery-columns-8 .gallery-caption { font-size: 0.6875em; }
@@ -966,7 +966,7 @@ label.required:after {
 	padding: 3.30769rem 0 7.46153rem;
 }
 .body_style_fullscreen .page_content_wrap {
-	padding: 6.30769rem 0;
+#	padding: 6.30769rem 0;
 }
 .body_style_boxed .page_content_wrap{
     padding: 3.30769rem 0 0;
@@ -7707,7 +7707,16 @@ footer .contacts_address .address_right .btn_directions a:after {
 /* artempol главная страница */
 
 .services, .greeting {
+	margin: 80px 0;
+}
+
+.services, .greeting {
 	font-size: 1.1rem;
+}
+
+.greeting ul {
+	list-style-type: none;
+	padding-left: 0 !important;
 }
 
 .list-icon ul {
@@ -7715,8 +7724,7 @@ footer .contacts_address .address_right .btn_directions a:after {
 	padding: 0;
 }
 
-.list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before {
-	margin: 0 5px 0 0;
+.icon-checkbox:before {
 	color: #ff5b4f;
 }
 
@@ -7729,10 +7737,23 @@ footer .contacts_address .address_right .btn_directions a:after {
     font-size: 2.2857em;
 }
 
+.services h1, .services h6 {
+	text-align: center;
+}
+
 /* artempol */
 
 .red {
 	color: #ff5b4f;
+}
+
+.content {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.gallery .gallery-item {
+	width: auto !important;
 }
 
 /* artempol награды на главной */
@@ -7789,7 +7810,7 @@ footer .contacts_address .address_right .btn_directions a:after {
 	width: 76px; 
 	height: 16px; 
 	top: 90%;
-	left: 0px;
+#	left: 0px;
 	display: block;
 	position: absolute;
 	z-index: 1000;
@@ -7812,7 +7833,8 @@ footer .contacts_address .address_right .btn_directions a:after {
 }
 
 .sc_contact_form .wpcf7-not-valid-tip,
-.sc_contact_form .wpcf7-validation-errors {
+.sc_contact_form .wpcf7-validation-errors,
+.wpcf7-mail-sent-ok {
 	color: white !important;
 }
 
@@ -7829,6 +7851,104 @@ footer .contacts_address .address_right .btn_directions a:after {
 
 .doctor_info .post_title {
 	margin-top: 0;
+}
+
+.question-answer {
+	border: 1px solid #474761;
+	padding: 10px 10px 0;
+	color: #474761;
+}
+
+.question-answer .question {
+	color: white;
+	background-color: #474761;
+	margin: -10px -10px 10px;
+	padding: 20px 10px;
+}
+
+/* лицензии */
+
+.lic_images {
+	margin: 20px 0;
+}
+
+.lic_gallery {
+	margin-right: 10px;
+}
+
+.icon-file-pdf {
+	font-size: 2em;
+	color: #ff5b4f;
+}
+
+#colorbox {
+	z-index: 100000;
+}
+
+#colorbox button {
+	font-size: 2em;
+	padding: 0.1em !important;
+}
+
+/* новости */
+
+.post_featured {
+	float: left;
+	width: auto !important;
+	margin: 10px 10px 0 0;
+}
+
+.post_info {
+	color: #ff5b4f;
+}
+
+/* персонал */
+
+.team {
+	background: url( '/wp-content/uploads/2016/01/img_parallax1_team.jpg' ) no-repeat scroll;
+	text-align: center;
+}
+
+.team h2 {
+	margin-top: 0;
+	padding-top: 4rem;
+	color: white !important;
+}
+
+.team h6 {
+    color: #7c7d8d !important;
+    margin-bottom: 4rem;
+}
+
+.sc_team_item {
+	padding: 0 15px 0 0;
+}
+
+.sc_team_item_info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.sc_team_item_title {
+    color: #ffffff !important;
+}
+
+.sc_team_item_title:hover {
+    color: #ff5b4f !important;
+}
+
+.sc_team_item_position {
+	color: #9b9cab !important;
+}
+
+.scheme_original .sc_slider_swiper .sc_slider_pagination_wrap span:before {
+    background-color: #ff5b4f;
+}
+
+.tp-bullets {
+	left: 500px;
 }
 
 

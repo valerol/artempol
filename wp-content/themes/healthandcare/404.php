@@ -1,18 +1,16 @@
 <?php
-/*
-Template Name: Page 404
-*/
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
 
-// Tribe Events hack - create empty post object
-global $post;
-if (!isset($post)) {
-	$post = new stdClass();
-	$post->post_type = 'unknown';
-}
-// End Tribe Events hack
-get_header(); 
+get_header(); ?>
 
-healthandcare_show_post_layout( array('layout' => '404'), false );
+<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyfifteen' ); ?></p>
 
-get_footer();
-?>
+<?php get_search_form(); ?>
+
+<?php get_footer(); ?>

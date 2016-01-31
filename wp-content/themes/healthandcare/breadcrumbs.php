@@ -5,9 +5,7 @@
 				<?php is_single() ? the_title() : single_cat_title(); ?>
 			</h1>
 			<div class="breadcrumbs">
-				<?php echo artempol_breadcrumbs( 
-
-					$taxonomy, 
+				<?php echo artempol_breadcrumbs(
 
 					'<span class="breadcrumbs_delimiter"></span>', 
 

@@ -261,13 +261,18 @@ Samsung Galaxy
 	
 	/* artempol */  
     
-    #jssor_1 {
+    #jssor_1, #jssor_team {
 		width: 550px !important;
     }
     
     .jssora03r {
 		right: 270px !important;
     }
+    
+	.tp-bullets {
+		left: 470px !important;
+	}
+
 }
 
 
@@ -646,13 +651,17 @@ Samsung Galaxy
 	
 	/* artempol */  
     
-    #jssor_1 {
+    #jssor_1, #jssor_team {
 		width: 550px !important;
     }
     
     .jssora03r {
 		right: 270px !important;
     }
+    
+	.tp-bullets {
+		left: 330px;
+	}
 }
 
 @media (min-width: 480px) and (max-width: 659px) {
@@ -1026,13 +1035,17 @@ Samsung Galaxy
     
     /* artempol */  
     
-    #jssor_1 {
+    #jssor_1, #jssor_team {
 		width: 300px !important;
     }
     
     .jssora03r {
 		right: 550px !important;
     }
+    
+    .tp-bullets {
+		left: 240px;
+	}
 }
 
 
@@ -1423,12 +1436,16 @@ Very common low res
     
     /* artempol */  
     
-    #jssor_1 {
+    #jssor_1, #jssor_team {
 		width: 100% !important;
     }
     
     .jssora03r {
 		right: 550px !important;
     }
+    
+	.tp-bullets {
+		left: 235px !important;
+	}
 
 }
