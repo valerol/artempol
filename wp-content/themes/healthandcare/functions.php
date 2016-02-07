@@ -92,14 +92,4 @@ if ( !function_exists( 'healthandcare_set_importer_options' ) ) {
 	}
 }
 
-
-
-
-/* Include framework core files
-------------------------------------------------------------------- */
-// If now is WP Heartbeat call - skip loading theme core files
-if (!isset($_POST['action']) || $_POST['action']!="heartbeat") {
-//	require_once( get_template_directory().'/fw/loader.php' );
-}
-
 ?>

@@ -14,13 +14,5 @@
 				<div class="popup_form_field submit_field"><input type="submit" class="submit_button" value="<?php esc_html_e('Login', 'healthandcare'); ?>"></div>
 			</form>
 		</div>
-		<div class="form_right">
-			<div class="login_socials_title"><?php esc_html_e('You can login using your social profile', 'healthandcare'); ?></div>
-			<div class="login_socials_list">
-				<?php echo healthandcare_do_shortcode('[trx_socials size="tiny" shape="round" socials="facebook=#|twitter=#|gplus=#"][/trx_socials]'); ?>
-			</div>
-			<div class="login_socials_problem"><a href="#"><?php esc_html_e('Problem with login?', 'healthandcare'); ?></a></div>
-			<div class="result message_block"></div>
-		</div>
 	</div>	<!-- /.login_wrap -->
 </div>		<!-- /.popup_login -->

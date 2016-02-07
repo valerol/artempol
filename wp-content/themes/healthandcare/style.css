@@ -7030,7 +7030,7 @@ div.sc_testimonials .sc_testimonial_author {
     height: 0.46153rem;
 }
 .footer_banner {
-    background: url("skins/healthandcare/images/Background_banner.png") no-repeat 0 0;
+    background: url("images/Background_banner.png") no-repeat 0 0;
     height: 22.38461rem;
 }
 .footer_banner .content_wrap {
@@ -7704,6 +7704,21 @@ footer .contacts_address .address_right .btn_directions a:after {
     padding: 0 3.07692rem 3.07692rem 3.07692rem;
 }
 
+/* artempol */
+
+.red {
+	color: #ff5b4f;
+}
+
+.content {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.gallery .gallery-item {
+	width: auto !important;
+}
+
 /* artempol главная страница */
 
 .services, .greeting {
@@ -7728,7 +7743,7 @@ footer .contacts_address .address_right .btn_directions a:after {
 	color: #ff5b4f;
 }
 
-.sc_title {
+.greeting .sc_title {
 	padding-left: 5rem;
 }
 
@@ -7741,19 +7756,21 @@ footer .contacts_address .address_right .btn_directions a:after {
 	text-align: center;
 }
 
-/* artempol */
-
-.red {
-	color: #ff5b4f;
+.achievements .swiper-slide {
+	margin-top: 5px;
 }
 
-.content {
-	margin-top: 80px;
-	margin-bottom: 80px;
+.swiper-pagination {
+	top: 87%;
 }
 
-.gallery .gallery-item {
-	width: auto !important;
+.swiper-pagination-bullet {
+	background: #fff !important;
+	margin: 1rem;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active, .swiper-pagination-bullet:hover {
+    border: 2px solid #fff;
 }
 
 /* artempol награды на главной */
@@ -7766,25 +7783,16 @@ footer .contacts_address .address_right .btn_directions a:after {
 	padding-top: 30px;
 }
 
-.testimonials_wrap .slides img {
-	height: 250px;
-	width: auto;
-}
-
 .testimonials_wrap .jssorb03 {
 	display: none;
 }
 
 .testimonials_wrap_inner {
-	background: url( '/wp-content/uploads/2016/01/img_parallax1.jpg' ) no-repeat scroll -500px 0;
+	background: url( '/wp-content/uploads/2016/01/img_parallax1.jpg' ) no-repeat scroll 50% 0;
 	padding: 0 !important;
 }
 
 /* artempol слайдер на главной */
-
-.slider_main_img {
-	left: -300px !important;
-}
 
 .tparrows {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
@@ -7806,18 +7814,40 @@ footer .contacts_address .address_right .btn_directions a:after {
 	right: 3%;
 }
 
-.tp-bullets {
-	width: 76px; 
-	height: 16px; 
-	top: 90%;
-#	left: 0px;
-	display: block;
-	position: absolute;
-	z-index: 1000;
+.slider_title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7rem;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform-origin: 50% 50% 0;
+    transition: none 0s ease 0s;
+    width: 80%;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
 
-.tp-bulletav {
-	border-color: #ffffff !important;
+.slider_description {
+    border-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform-origin: 50% 50% 0;
+    transition: none 0s ease 0s ;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.main-slider .sc_button {
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet-active {
+	border: 2px solid #fff;
 }
 
 /* artempol форма обратной связи */
@@ -7920,10 +7950,6 @@ footer .contacts_address .address_right .btn_directions a:after {
     margin-bottom: 4rem;
 }
 
-.sc_team_item {
-	padding: 0 15px 0 0;
-}
-
 .sc_team_item_info {
     background-color: rgba(255, 255, 255, 0.1);
     padding-bottom: 1.5rem;
@@ -7943,12 +7969,19 @@ footer .contacts_address .address_right .btn_directions a:after {
 	color: #9b9cab !important;
 }
 
-.scheme_original .sc_slider_swiper .sc_slider_pagination_wrap span:before {
-    background-color: #ff5b4f;
+/* услуги */ 
+
+.services {
+	font-size: 1.15rem;
+	line-height: 1.5rem;
 }
 
-.tp-bullets {
-	left: 500px;
+.sc_list_icon:before {
+	margin-right: 0.5em !important;
 }
 
+/* footer */
 
+.email_contact_info a {
+	color: #fff !important;
+}

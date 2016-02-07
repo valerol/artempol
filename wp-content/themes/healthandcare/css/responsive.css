@@ -15,6 +15,15 @@ Apple iPod Touch (5th generation)
 @media (min-width: 1366px) and (max-width: 1679px) {
 */
 /* Without side menu */
+@media (min-width: 768px) {
+
+	/* artempol */	
+	.services h6 {
+		left: 22%;
+		width: 56%;
+	}
+}
+
 @media (min-width: 1136px) and (max-width: 1279px) {
 
 	/* Body sizes */
@@ -60,6 +69,13 @@ Apple iPod Touch (5th generation)
 	}
 	.widget_area .sc_tabs.sc_tabs_style_2 .sc_tabs_titles li a {
 		padding: 2px 0.5em;
+	}
+	
+	/* artempol */	
+	
+	.doctors .swiper-slide {
+		width: 32%;
+		margin: 0 1%;
 	}
 }
 
@@ -142,6 +158,23 @@ Apple iPod Touch (4th generation)
     .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
         float: right;
     }
+	
+	/* artempol */	
+	
+	.doctors .swiper-slide {
+		width: 32%;
+		margin: 0 1%;
+	}
+	
+	.slider_title {
+		font-size: 7rem;
+		line-height: 7rem;
+	}
+	
+	.slider_description {
+		font-size: 3rem;
+		line-height: 5rem;
+	}
 }
 
 
@@ -261,16 +294,19 @@ Samsung Galaxy
 	
 	/* artempol */  
     
-    #jssor_1, #jssor_team {
-		width: 550px !important;
-    }
-    
-    .jssora03r {
-		right: 270px !important;
-    }
-    
-	.tp-bullets {
-		left: 470px !important;
+	.doctors .swiper-slide {
+		width: 48%;
+		margin: 0 1%;
+	}
+	
+	.slider_title {
+		font-size: 7rem;
+		line-height: 7rem;
+	}
+	
+	.slider_description {
+		font-size: 3rem;
+		line-height: 5rem;
 	}
 
 }
@@ -651,16 +687,19 @@ Samsung Galaxy
 	
 	/* artempol */  
     
-    #jssor_1, #jssor_team {
-		width: 550px !important;
-    }
-    
-    .jssora03r {
-		right: 270px !important;
-    }
-    
-	.tp-bullets {
-		left: 330px;
+	.doctors .swiper-slide {
+		width: 48%;
+		margin: 0 1%;
+	}
+	
+	.slider_title {
+		font-size: 6rem;
+		line-height: 6rem;
+	}
+	
+	.slider_description {
+		font-size: 3rem;
+		line-height: 5rem;
 	}
 }
 
@@ -1035,17 +1074,21 @@ Samsung Galaxy
     
     /* artempol */  
     
-    #jssor_1, #jssor_team {
-		width: 300px !important;
-    }
-    
-    .jssora03r {
-		right: 550px !important;
-    }
-    
-    .tp-bullets {
-		left: 240px;
+	.doctors .swiper-slide {
+		width: 100%;
+		margin: 0;
 	}
+	
+	.slider_title {
+		font-size: 5em;
+		line-height: 2em;
+	}
+	
+	.slider_description {
+		font-size: 3em;
+		line-height: 2em;
+	}
+
 }
 
 
@@ -1436,16 +1479,19 @@ Very common low res
     
     /* artempol */  
     
-    #jssor_1, #jssor_team {
-		width: 100% !important;
-    }
-    
-    .jssora03r {
-		right: 550px !important;
-    }
-    
-	.tp-bullets {
-		left: 235px !important;
+	.doctors .swiper-slide {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.slider_title {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	
+	.slider_description {
+		font-size: 1rem;
+		line-height: 2rem;
 	}
 
 }
