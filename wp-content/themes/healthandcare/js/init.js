@@ -113,41 +113,42 @@ function healthandcare_ready_actions() {
     });
     
     // Main Slider
-    var mainSwiper = new Swiper ('.swiper-container.main-slider', {
+    var mainSwiper = new Swiper ( '.main-slider', {
+		autoplay: 3600,
 	    centeredSlides: true,
-	    nextButton: '.swiper-button-prev',
-	    prevButton: '.swiper-button-next',
-	    pagination: '.swiper-pagination',
+	    nextButton: '.button-prev-main',
+	    prevButton: '.button-next-main',
+	    pagination: '.bullets-main',
 	    paginationType: 'bullets',
 	    paginationClickable: true,
 	    loop: true,
-    })
+    });
     
     // Team Slider  
-    var teamSwiper = new Swiper ('.swiper-container.doctors', {
+    var teamSwiper = new Swiper ( '.doctors', {
 	    slidesPerView: 'auto',
 	    centeredSlides: true,
 	    nextButton: '.swiper-button-prev',
 	    prevButton: '.swiper-button-next',
-	    pagination: '.swiper-pagination',
+	    pagination: '.bullets-team',
 	    paginationType: 'bullets',
 	    paginationClickable: true,
 	    loop: true,
-    })
+    });
     
     // Achievements Swiper  
-    var achievementsSwiper = new Swiper ('.swiper-container.achievements', {
-	    slidesPerView: 'auto',
+    var achievementsSwiper = new Swiper ( '.achievements', {
+	    slidesPerView: 1,
 	    centeredSlides: true,
 	    nextButton: '.swiper-button-prev',
 	    prevButton: '.swiper-button-next',
-	    pagination: '.swiper-pagination',
+	    pagination: '.bullets-achievements',
 	    paginationType: 'bullets',
 	    paginationClickable: true,
 	    loop: true,
-    })
+    });
     
-    jQuery( 'a.colorbox' ).colorbox();		
+    jQuery( 'a.colorbox, .gallery a' ).colorbox();
 }
 
 // Do actions when page scrolled

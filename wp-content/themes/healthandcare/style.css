@@ -1942,7 +1942,7 @@ label.required:after {
 .top_panel_title.title_present.breadcrumbs_present .page_title,
 .top_panel_title.title_present.breadcrumbs_present .breadcrumbs {
 	max-width:49%;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 .top_panel_style_3 .page_title,
 .top_panel_style_3 .breadcrumbs {
@@ -7715,8 +7715,41 @@ footer .contacts_address .address_right .btn_directions a:after {
 	margin-bottom: 80px;
 }
 
+.content th {
+	text-transform: uppercase;
+}
+
 .gallery .gallery-item {
 	width: auto !important;
+}
+
+.top_panel_title.title_present.breadcrumbs_present .page_title {
+	max-width: 50%;
+}
+
+.file:before, .iconed:before {
+	font-size: 3em;
+}
+
+.icon-file-excel:before {
+	color: #8fcec5;
+}
+
+.icon-file-word:before {
+	color: #595d8f;
+}
+
+.icon-file-pdf:before {
+	color: #ff5b4f;
+}
+
+.icon-file-archive:before {
+	color: #ffcd5f;
+}
+
+.parent-page {
+	list-style: none;
+	text-transform: uppercase;
 }
 
 /* artempol главная страница */
@@ -7760,11 +7793,11 @@ footer .contacts_address .address_right .btn_directions a:after {
 	margin-top: 5px;
 }
 
-.swiper-pagination {
-	top: 87%;
+.bullets {
+	margin-top: -50px;
 }
 
-.swiper-pagination-bullet {
+/*.swiper-pagination-bullet {
 	background: #fff !important;
 	margin: 1rem;
 }
@@ -7772,6 +7805,8 @@ footer .contacts_address .address_right .btn_directions a:after {
 .swiper-pagination-bullet .swiper-pagination-bullet-active, .swiper-pagination-bullet:hover {
     border: 2px solid #fff;
 }
+
+*/
 
 /* artempol награды на главной */
 
@@ -7846,10 +7881,6 @@ footer .contacts_address .address_right .btn_directions a:after {
     margin-top: 30px;
 }
 
-.swiper-pagination-bullet-active {
-	border: 2px solid #fff;
-}
-
 /* artempol форма обратной связи */
 
 .sc_contact_form input[type="text"], 
@@ -7904,11 +7935,6 @@ footer .contacts_address .address_right .btn_directions a:after {
 
 .lic_gallery {
 	margin-right: 10px;
-}
-
-.icon-file-pdf {
-	font-size: 2em;
-	color: #ff5b4f;
 }
 
 #colorbox {

@@ -14,9 +14,6 @@
 </head>
 
 <body class="healthandcare_body body_style_fullscreen body_filled theme_skin_healthandcare article_style_stretch layout_single-standard template_single-standard top_panel_show top_panel_above sidebar_hide sidebar_outer_hide wpb-js-composer js-comp-ver-4.8.1 vc_responsive">
-
-	<?php // Add TOC items 'Home' and "To top" ?>
-
 	<div class="body_wrap">
 		<div class="page_wrap">			
 			<header class="top_panel_wrap top_panel_style_4 scheme_original menu_show">
@@ -28,12 +25,11 @@
 			</header>
 			
 			<?php if( ! is_front_page() ) : ?>				
-				<?php //get_template_part( 'breadcrumbs' ); ?>				
-				
+				<?php get_template_part( 'breadcrumbs' ); ?>				
 				<!-- content begin -->				
 				<div class="content_wrap content">				
 			<?php endif; ?>
 
-<?php var_dump($wp_query); ?>
+<?php //var_dump($wp_query); ?>
 <?php //echo esc_attr(wp_create_nonce('ajax_nonce')); ?>
 <?php //echo esc_url(admin_url('admin-ajax.php')); ?>

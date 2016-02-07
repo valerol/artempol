@@ -25,12 +25,12 @@
 	</div>
 	<!-- If we need pagination -->
 	<div class="content_wrap">
-		<div class="swiper-pagination"></div>
+		<div class="bullets bullets-main"></div>
 	</div>
 	
 	<!-- If we need navigation buttons -->
-	<div class="swiper-button-prev tp-leftarrow tparrows custom noSwipe"></div>
-	<div class="swiper-button-next tp-rightarrow tparrows custom noSwipe"></div>
+	<div class="button-prev-main tp-leftarrow tparrows custom noSwipe"></div>
+	<div class="button-next-main tp-rightarrow tparrows custom noSwipe"></div>
 	
 	<!-- If we need scrollbar -->
 	<div class="swiper-scrollbar"></div>

@@ -25,7 +25,7 @@
 				<?php wp_reset_postdata(); ?>				
 		</div>
 		<!-- If we need pagination -->
-		<div class="swiper-pagination"></div>		
+		<div class="bullets bullets-team"></div>		
 		<!-- If we need navigation buttons -->
 		<div class="swiper-button-prev tp-leftarrow tparrows custom noSwipe"></div>
 		<div class="swiper-button-next tp-rightarrow tparrows custom noSwipe"></div>		
