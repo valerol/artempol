@@ -114,7 +114,7 @@ function healthandcare_ready_actions() {
     
     // Main Slider
     var mainSwiper = new Swiper ( '.main-slider', {
-		autoplay: 3600,
+//		autoplay: 3600,
 	    centeredSlides: true,
 	    nextButton: '.button-prev-main',
 	    prevButton: '.button-next-main',

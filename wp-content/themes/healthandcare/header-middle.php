@@ -2,11 +2,17 @@
 	<div class="content_wrap">
 		<div class="columns_wrap columns_fluid">
 			<div class="column-1_4 contact_logo">
-				<div class="logo">				
-						<?php if ( ! is_front_page() ) : ?>
-							<a href="<?php echo home_url(); ?>"><div class="logo_text"><?php echo ot_get_option( 'header_logo_text' ); ?></div></a>
-						<?php else: ?>
-							<div class="logo_text"><?php echo ot_get_option( 'header_logo_text' ); ?></div>
+				<div class="logo">	
+						
+						<?php if ( ! is_front_page() ) : ?> 
+							<a href="<?php echo home_url(); ?>"> 
+						<?php endif; ?>
+						
+						<span class="icon-user-md"></span>
+						<div class="logo_text"><?php echo ot_get_option( 'header_logo_text' ); ?></div>
+						
+						<?php if ( ! is_front_page() ) : ?> 
+							</a>						
 						<?php endif; ?>
 				</div>
 			</div>

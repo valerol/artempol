@@ -100,11 +100,7 @@ Template Name: Main page
 			<h6 style="margin-bottom:3.76923rem;text-align:center;" class="sc_title sc_title_regular sc_align_center">
 				<?php echo ot_get_option( 'services_description' ); ?>
 			</h6>
-			<div class="columns_wrap sc_columns columns_nofluid sc_columns_count_3">
-				<div style="text-align:none;" class="column-1_3 sc_column_item sc_column_item_1 odd first"><?php echo ot_get_option( 'services_1' ); ?></div>
-				<div style="text-align:none;" class="column-1_3 sc_column_item sc_column_item_2 even"><?php echo ot_get_option( 'services_2' ); ?></div>
-				<div style="text-align:none;" class="column-1_3 sc_column_item sc_column_item_3 odd"><?php echo ot_get_option( 'services_3' ); ?></div>
-			</div>
+			<?php echo ot_get_option( 'services_1' ); ?>
 		</div>
 	</div>
 <?php endif; ?>
@@ -158,7 +154,7 @@ Template Name: Main page
 			
 			<?php if ( ot_get_option( 'banner_link' ) ) : ?>
 				<div class="btn_banner">
-					<a class="btn_banner_btn" href="#"><?php echo ot_get_option( 'banner_ancor' ) ? ot_get_option( 'banner_ancor' ) : "Подробнее" ; ?></a>
+					<a class="btn_banner_btn" href="<?php echo ot_get_option( 'banner_link' ); ?>"><?php echo ot_get_option( 'banner_ancor' ) ? ot_get_option( 'banner_ancor' ) : "Подробнее" ; ?></a>
 				</div>
 			<?php endif; ?>
 		</div>

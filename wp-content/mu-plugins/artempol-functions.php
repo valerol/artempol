@@ -300,6 +300,26 @@ function artempol_mce_before_init( $settings ) {
             'selector' => 'a',
             'classes' => 'file icon-file-archive'
         ),
+        array(
+            'title' => 'Iconed list',
+            'selector' => 'li',
+            'classes' => 'sc_list_icon icon-checkbox'
+        ),
+        array(
+            'title' => '2 columns',
+            'selector' => 'li, p, div',
+            'classes' => 'column-1_2 columns'
+        ),        
+        array(
+            'title' => '3 columns',
+            'selector' => 'li, p, div',
+            'classes' => 'column-1_3 columns'
+        ),
+        array(
+            'title' => '4 columns',
+            'selector' => 'li, p, div',
+            'classes' => 'column-1_4 columns'
+        ),        
     );
 
     $settings[ 'style_formats' ] = json_encode( $style_formats );

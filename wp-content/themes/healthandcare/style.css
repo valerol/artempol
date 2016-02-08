@@ -1364,7 +1364,7 @@ label.required:after {
 }
 .logo_text,
 .logo_slogan {
-	float:left;
+#	float:left;
 	text-align:left;
 }
 .logo_slogan {
@@ -5031,18 +5031,18 @@ input[type="checkbox"]:checked + label:before {
     height: 1.5em;
 }
 .top_panel_middle .logo a {
-    position: relative;
-    width: 2.46153rem;
-    height: 2.30769rem;
+#    position: relative;
+#    width: 2.46153rem;
+#    height: 2.30769rem;
 }
 .top_panel_middle .logo a img {
     width: 100%;
     height: 100%;
 }
 .logo .logo_text {
-    position: absolute;
+#    position: absolute;
 #	 top: 0.30769rem;
-    left: 3.84615rem;
+#    left: 3.84615rem;
 }
 .single-team .comments_form .comment-form .box_form_left,
 .single-team .comments_form .comment-form .box_form_right {
@@ -7710,6 +7710,19 @@ footer .contacts_address .address_right .btn_directions a:after {
 	color: #ff5b4f;
 }
 
+.columns {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.logo span {
+	float: left;
+	font-size: 4rem;
+	margin-top: -0.4rem;
+	margin-right: 10px;
+	color: #ffcd5f;
+}
+
 .content {
 	margin-top: 80px;
 	margin-bottom: 80px;
@@ -7717,6 +7730,14 @@ footer .contacts_address .address_right .btn_directions a:after {
 
 .content th {
 	text-transform: uppercase;
+}
+
+.sc_list_icon:before {
+	margin-right: 0.5em !important;
+}
+
+.sc_list_icon {
+    list-style: none outside none;
 }
 
 .gallery .gallery-item {
@@ -7858,8 +7879,8 @@ footer .contacts_address .address_right .btn_directions a:after {
     transform: translate3d(0px, 0px, 0px);
     transform-origin: 50% 50% 0;
     transition: none 0s ease 0s;
-    width: 80%;
-    margin-top: 30px;
+    width: 70%;
+    margin-top: 10%;
     text-transform: uppercase;
 }
 
@@ -7873,12 +7894,12 @@ footer .contacts_address .address_right .btn_directions a:after {
     transform: translate3d(0px, 0px, 0px);
     transform-origin: 50% 50% 0;
     transition: none 0s ease 0s ;
-    margin-top: 30px;
+    margin-top: 10%;
     text-transform: uppercase;
 }
 
 .main-slider .sc_button {
-    margin-top: 30px;
+    margin-top: 10%;
 }
 
 /* artempol форма обратной связи */
@@ -7995,16 +8016,6 @@ footer .contacts_address .address_right .btn_directions a:after {
 	color: #9b9cab !important;
 }
 
-/* услуги */ 
-
-.services {
-	font-size: 1.15rem;
-	line-height: 1.5rem;
-}
-
-.sc_list_icon:before {
-	margin-right: 0.5em !important;
-}
 
 /* footer */
 

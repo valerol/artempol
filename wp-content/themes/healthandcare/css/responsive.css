@@ -70,13 +70,6 @@ Apple iPod Touch (5th generation)
 	.widget_area .sc_tabs.sc_tabs_style_2 .sc_tabs_titles li a {
 		padding: 2px 0.5em;
 	}
-	
-	/* artempol */	
-	
-	.doctors .swiper-slide {
-		width: 32%;
-		margin: 0 1%;
-	}
 }
 
 
@@ -158,23 +151,6 @@ Apple iPod Touch (4th generation)
     .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
         float: right;
     }
-	
-	/* artempol */	
-	
-	.doctors .swiper-slide {
-		width: 32%;
-		margin: 0 1%;
-	}
-	
-	.slider_title {
-		font-size: 7rem;
-		line-height: 7rem;
-	}
-	
-	.slider_description {
-		font-size: 3rem;
-		line-height: 5rem;
-	}
 }
 
 
@@ -291,24 +267,6 @@ Samsung Galaxy
 	.scroll_to_top.show {
 		bottom: 1em;
 	}
-	
-	/* artempol */  
-    
-	.doctors .swiper-slide {
-		width: 48%;
-		margin: 0 1%;
-	}
-	
-	.slider_title {
-		font-size: 7rem;
-		line-height: 7rem;
-	}
-	
-	.slider_description {
-		font-size: 3rem;
-		line-height: 5rem;
-	}
-
 }
 
 
@@ -684,23 +642,6 @@ Samsung Galaxy
 	.scroll_to_top.show {
 		bottom: 1em;
 	}
-	
-	/* artempol */  
-    
-	.doctors .swiper-slide {
-		width: 48%;
-		margin: 0 1%;
-	}
-	
-	.slider_title {
-		font-size: 6rem;
-		line-height: 6rem;
-	}
-	
-	.slider_description {
-		font-size: 3rem;
-		line-height: 5rem;
-	}
 }
 
 @media (min-width: 480px) and (max-width: 659px) {
@@ -1071,24 +1012,6 @@ Samsung Galaxy
     .scroll_to_top.show {
         bottom: 1em;
     }
-    
-    /* artempol */  
-    
-	.doctors .swiper-slide {
-		width: 100%;
-		margin: 0;
-	}
-	
-	.slider_title {
-		font-size: 5em;
-		line-height: 2em;
-	}
-	
-	.slider_description {
-		font-size: 3em;
-		line-height: 2em;
-	}
-
 }
 
 
@@ -1165,7 +1088,7 @@ Very common low res
 	}
 
 	/* Columns relayout (no columns) */
-	.row:not(.columns_fluid) > [class*="column-"], .columns_wrap:not(.columns_fluid) > [class*="column-"] {
+	.row:not(.columns_fluid) > [class*="column-"], .columns_wrap:not(.columns_fluid) > [class*="column-"], .columns {
 		width:100%;
 	}
 	.row.columns_fluid > [class*="column-"], .columns_wrap.columns_fluid > [class*="column-"] {
@@ -1476,22 +1399,55 @@ Very common low res
         padding: 0;
         margin: 0;
     }  
-    
-    /* artempol */  
-    
-	.doctors .swiper-slide {
+}
+
+
+/* artempol slider */
+@media ( max-height: 900px ) {		
+	
+	.slider_title, .slider_description, .main-slider .sc_button {
+		margin-top: 5%;
+	}
+}
+
+@media ( max-height: 600px ) {		
+	
+	.slider_title, .slider_description, .main-slider .sc_button {
+		margin-top: 3%;
+	}
+}
+
+@media ( max-width: 980px ) {	
+
+	.slider_title {
+		font-size: 5rem;
+	}
+}
+
+@media ( max-width: 360px ) {	
+
+	.slider_title, .slider_description, .main-slider .sc_button {
+		margin-top: 15%;
+	}
+
+	.slider_title, .slider_description {
 		width: 100%;
-		margin: 0;
 	}
 	
 	.slider_title {
-		font-size: 2.5rem;
-		line-height: 3rem;
+		font-size: 4rem;
+		line-height: 5rem;
 	}
-	
-	.slider_description {
-		font-size: 1rem;
-		line-height: 2rem;
-	}
+}
 
+@media ( max-width: 320px ) {
+
+	.slider_title, .slider_description, .main-slider .sc_button {
+		margin-top: 10%;
+	}	
+	
+	.slider_title {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
 }
