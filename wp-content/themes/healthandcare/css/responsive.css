@@ -15,14 +15,6 @@ Apple iPod Touch (5th generation)
 @media (min-width: 1366px) and (max-width: 1679px) {
 */
 /* Without side menu */
-@media (min-width: 768px) {
-
-	/* artempol */	
-	.services h6 {
-		left: 22%;
-		width: 56%;
-	}
-}
 
 @media (min-width: 1136px) and (max-width: 1279px) {
 
@@ -1399,55 +1391,4 @@ Very common low res
         padding: 0;
         margin: 0;
     }  
-}
-
-
-/* artempol slider */
-@media ( max-height: 900px ) {		
-	
-	.slider_title, .slider_description, .main-slider .sc_button {
-		margin-top: 5%;
-	}
-}
-
-@media ( max-height: 600px ) {		
-	
-	.slider_title, .slider_description, .main-slider .sc_button {
-		margin-top: 3%;
-	}
-}
-
-@media ( max-width: 980px ) {	
-
-	.slider_title {
-		font-size: 5rem;
-	}
-}
-
-@media ( max-width: 360px ) {	
-
-	.slider_title, .slider_description, .main-slider .sc_button {
-		margin-top: 15%;
-	}
-
-	.slider_title, .slider_description {
-		width: 100%;
-	}
-	
-	.slider_title {
-		font-size: 4rem;
-		line-height: 5rem;
-	}
-}
-
-@media ( max-width: 320px ) {
-
-	.slider_title, .slider_description, .main-slider .sc_button {
-		margin-top: 10%;
-	}	
-	
-	.slider_title {
-		font-size: 3rem;
-		line-height: 4rem;
-	}
 }

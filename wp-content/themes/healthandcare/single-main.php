@@ -3,9 +3,29 @@ Template Name: Main page
 */ ?>
 <?php get_header(); ?>
 
-<script>new WOW().init();</script>
-
-<?php if ( ot_get_option( 'show_slider' ) && $slides = ot_get_option( 'slider' ) ) get_template_part( 'slider', 'main' ); ?>
+<?php if ( ot_get_option( 'show_slider' ) && $slides = ot_get_option( 'slider' ) ) : ?>
+	<!-- Slider main container -->
+	<div class="slider-main flexslider">
+		<!-- Additional required wrapper -->
+		<ul class="slides">		
+			
+			<?php foreach( $slides as $key => $slide ) : ?>					
+				<li style="background-image: url( <?php echo $slide[ 'image' ] ?> );" >
+					<div class="content_wrap">
+						<div class="slider_title"><?php echo $slide[ 'title' ]; ?></div>
+						<div class="slider_description"><?php echo $slide[ 'description' ]; ?></div>
+						
+						<?php if ( $slide[ 'link' ] ) $link[ $key ] = explode( '|', $slide[ 'link' ] ); ?>
+						
+						<?php if ( isset( $link[ $key ][ 0 ] ) && isset( $link[ $key ][ 1 ] ) ) : ?>
+							<a class="slider_button sc_button sc_button_square sc_button_style_filled sc_button_bg_link sc_button_size_large  sc_button_iconed icon-right-2" href="<?php echo $link[ $key ][ 1 ]; ?>"><?php echo $link[ $key ][ 0 ]; ?></a>
+						<?php endif; ?>
+					</div>				
+				</li>
+			<?php endforeach; ?>		
+		</ul>
+	</div>
+<?php endif; ?>
 
 <?php if ( ot_get_option( 'show_greeting' ) == 'on' && ( ot_get_option( 'greeting' ) || ot_get_option( 'greeting_text' ) ) ) : // Приветствие ?>
 	<div class="wpb_wrapper greeting list-icon">
@@ -59,15 +79,17 @@ Template Name: Main page
 							<div class="column-1_4 column_padding_bottom">
 								<div class="sc_services_item sc_services_item_<?php echo $cb_counter; ?>">
 									<h4 class="sc_services_item_title">
-										<a href="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_link' ); ?>">
-											<span class="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_icon' ); ?>"></span>
-											<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_title' ); ?>
-										</a>
+										<span class="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_icon' ); ?>"></span>
+										<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_title' ); ?>
 									</h4>							
 									<div class="sc_services_item_content">
 										<div class="sc_services_item_description">
 											<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_text' ); ?>
 										</div>
+										<a class="sc_services_item_readmore" href="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_link' ); ?>">
+											Подробнее
+											<span class="icon-right-2"></span>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -79,15 +101,27 @@ Template Name: Main page
 	</div>
 <?php endif; ?>
 
-<?php get_template_part( 'colored_line' ); ?>
-
 <?php if ( ot_get_option( 'show_achievements' ) == 'on' ) : // Грамоты ?>
-	<footer class="testimonials_wrap sc_section scheme_original">
-		<div class="testimonials_wrap_inner sc_section_inner sc_section_overlay wow fadeInUp">
-			<div class="content_wrap">
-				<?php get_template_part( 'slider', 'achievements' ); ?>
+	<?php get_template_part( 'colored_line' ); ?>
+	<footer class="testimonials_wrap sc_section scheme_original wow fadeInUp">
+			<!-- Slider main container -->
+			<div class="slider-achieve flexslider" style="height: 312px;">
+				<!-- Additional required wrapper -->
+				<ul class="slides">
+					<?php if ( ot_get_option( 'achievements_page' ) ) $images = get_attached_media( 'image', ot_get_option( 'achievements_page' ) );  // get images ?>
+					
+					<?php if ( $images ) : // show images ?>
+
+						<?php foreach ( $images as $post ) :  setup_postdata( $post ); ?>				
+							<?php $image = image_downsize( $post->ID, 'medium' ); ?>
+							<li>
+								<a class="colorbox" href="<?php echo $post->guid ?>"><img src="<?php echo $image[ 0 ] ?>" style="margin-left: -<?php echo ( $image[ 1 ] / 2 ); ?>px;"></a>
+							</li>	
+						<?php endforeach; ?>				
+						<?php wp_reset_postdata(); ?>
+					<?php endif; ?>				
+				</ul>
 			</div>
-		</div>
 	</footer>
 <?php endif; ?>
 
@@ -106,17 +140,51 @@ Template Name: Main page
 <?php endif; ?>
 
 <?php if ( ot_get_option( 'show_team' ) == 'on' ) : // Персонал ?>
-
 	<?php $doctors = get_posts( array ( 'post_type' => 'doctor' ) ); ?>
 	
 	<?php if ( $doctors ) : ?>	
 		<?php get_template_part( 'colored_line' ); ?>		
-		<div class="team wow fadeInUp">
-			<div class="content_wrap">			
-				<h2><?php echo ot_get_option( 'team_title' ); ?></h2>				
-				<h6><?php echo ot_get_option( 'team_description' ); ?></h6>
-				<?php get_template_part( 'slider', 'team' ); ?>		
-			</div>
+		<div class="team wow fadeInUp">		
+			<h2><?php echo ot_get_option( 'team_title' ); ?></h2>				
+			<h6><?php echo ot_get_option( 'team_description' ); ?></h6>
+			
+			<?php if ( $doctors = get_posts( array ( 'post_type' => 'doctor' ) ) ) : ?>
+				<!-- Slider main container -->
+				<div class="swiper-container slider-team content_wrap" style="height: 496px;">
+					<!-- Additional required wrapper -->
+					<div class="slides swiper-wrapper">
+
+						<?php foreach ( $doctors as $post ) : setup_postdata( $post ); ?>
+						
+							<?php if ( has_post_thumbnail() ) : ?>
+								<div class="swiper-slide">						
+									<div class="sc_team_item">								
+										<?php $departments = get_the_terms( $post, 'department' ); ?>								
+										<?php $department = $departments[0]; ?>								
+										<a href="<?php echo get_term_link( $department, 'department' ); ?>">								
+											<div class=""><?php the_post_thumbnail( 'medium' ); ?></div>									
+											<div class="sc_team_item_info_container">	
+												<div class="sc_team_item_info">												
+													<h5 class="sc_team_item_title"><?php the_title(); ?></h5>									
+													<div class="sc_team_item_position"><?php the_excerpt(); ?></div>
+												</div>													
+											</div>								
+										</a>							
+									</div>
+								</div>						
+							<?php endif; ?>	
+						<?php endforeach; ?>
+						<?php wp_reset_postdata(); ?>				
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>	
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev tp-leftarrow tparrows custom noSwipe"></div>
+					<div class="swiper-button-next tp-rightarrow tparrows custom noSwipe"></div>		
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+			<?php endif; ?>
 		</div>	
 	<?php endif; ?>
 <?php endif; ?>
@@ -154,7 +222,7 @@ Template Name: Main page
 			
 			<?php if ( ot_get_option( 'banner_link' ) ) : ?>
 				<div class="btn_banner">
-					<a class="btn_banner_btn" href="<?php echo ot_get_option( 'banner_link' ); ?>"><?php echo ot_get_option( 'banner_ancor' ) ? ot_get_option( 'banner_ancor' ) : "Подробнее" ; ?></a>
+					<a class="btn_banner_btn" href="#"><?php echo ot_get_option( 'banner_ancor' ) ? ot_get_option( 'banner_ancor' ) : "Подробнее" ; ?></a>
 				</div>
 			<?php endif; ?>
 		</div>

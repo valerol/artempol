@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 
+<!--[if lte IE 8]>    
+<html class="ie8 scheme_original" <?php language_attributes(); ?> > 
+<![endif]--> 
 <html class="scheme_original js_active vc_desktop vc_transform" <?php language_attributes(); ?> >
 
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name = "format-detection" content = "telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

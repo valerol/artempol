@@ -27,8 +27,14 @@ function healthandcare_init_actions() {
 // Theme first load actions
 function healthandcare_ready_actions() {
     "use strict";
+	
+	if ( ! jQuery( 'html' ).hasClass( 'ie8') ) { 
+		new WOW().init();	
+	};
     
     healthandcare_init_sfmenu();
+	
+	healthandcare_resize_fullscreen_slider();
 
     // Responsive menu button
     jQuery('.menu_main_responsive_button, .sidebar_outer_menu_responsive_button').on("click", function(e){
@@ -112,41 +118,46 @@ function healthandcare_ready_actions() {
 	    return false;
     });
     
-    // Main Slider
-    var mainSwiper = new Swiper ( '.main-slider', {
+    jQuery( '.slider-main' ).flexslider( {
+		animation: "slide",
+	} );
+	
+	jQuery( '.slider-achieve' ).flexslider( {
+		animation: "slide",
+	} );
+  
+/*    var mainSwiper = new Swiper( '.slider-main', {
 //		autoplay: 3600,
 	    centeredSlides: true,
-	    nextButton: '.button-prev-main',
-	    prevButton: '.button-next-main',
-	    pagination: '.bullets-main',
-	    paginationType: 'bullets',
+	    nextButton: '.swiper-button-prev',
+	    prevButton: '.swiper-button-next',
+	    pagination: '.swiper-pagination',
 	    paginationClickable: true,
 	    loop: true,
     });
     
     // Team Slider  
-    var teamSwiper = new Swiper ( '.doctors', {
+    var teamSwiper = new Swiper( '.slider-team', {
 	    slidesPerView: 'auto',
-	    centeredSlides: true,
-	    nextButton: '.swiper-button-prev',
-	    prevButton: '.swiper-button-next',
-	    pagination: '.bullets-team',
-	    paginationType: 'bullets',
+	    centeredSlides: false,
+	    nextButton: '.slider-team .swiper-button-prev',
+	    prevButton: '.slider-team .swiper-button-next',
+	    pagination: '.slider-team .swiper-pagination',
 	    paginationClickable: true,
+		spaceBetween: 30,
 	    loop: true,
     });
     
     // Achievements Swiper  
-    var achievementsSwiper = new Swiper ( '.achievements', {
-	    slidesPerView: 1,
+    var achievementsSwiper = new Swiper( '.slider-achieve', {
+	    slidesPerView: 'auto',
 	    centeredSlides: true,
-	    nextButton: '.swiper-button-prev',
-	    prevButton: '.swiper-button-next',
-	    pagination: '.bullets-achievements',
-	    paginationType: 'bullets',
+	    nextButton: '.slider-achieve .swiper-button-prev',
+	    prevButton: '.slider-achieve .swiper-button-next',
+	    pagination: '.slider-achieve .swiper-pagination',
 	    paginationClickable: true,
 	    loop: true,
-    });
+    });*/
     
     jQuery( 'a.colorbox, .gallery a' ).colorbox();
 }
@@ -285,14 +296,33 @@ function healthandcare_init_sfmenu() {
 function healthandcare_resize_fullscreen_slider() {
     "use strict";
     
-    var slider = jQuery( '.main-slider' );
+    var slider = jQuery( '.slider-main' );
+    var slide = slider.find( '.slides li' );
+    var title = jQuery( '.slider_title' );
     
-    if ( slider.length < 1 )
+    if ( slider.length < 1 ) {
         return;
+	}
     
-    var h = jQuery(window).height() - jQuery('#wpadminbar').height() - (jQuery('body').hasClass('top_panel_above') && !jQuery('body').hasClass('.top_panel_fixed') ? jQuery('.top_panel_wrap').height() : 0);
-    
-    if ( h < 570 ) {
-      slider.height(h);
+    var window_height = jQuery( window ).height() - jQuery( '#wpadminbar' ).height() - ( jQuery( 'body' ).hasClass( 'top_panel_above' ) && ! jQuery( 'body' ).hasClass( '.top_panel_fixed' ) ? jQuery( '.top_panel_wrap' ).height() : 0 );
+	var window_width = jQuery( window ).width();
+	
+	title.css( 'margin-top', ( slide.height() / window_width ) * 9 + '%' );  
+
+	if ( window_height < 570 ) {
+		slide.height( window_height );
+		
+		if ( window_height * 2 > window_width * 3 ) {
+			title.css( 'width', '100%' );
+		}
+		else {
+			title.css( 'width', '70%' );
+		}
+	}
+	else slide.height( 570 );
+
+    if ( window_width < 1280 ) {	
+		slider.css( 'font-size', 16 * ( window_width / 1280 ) );
     }
+	else slider.css( 'font-size', 16 );
 }

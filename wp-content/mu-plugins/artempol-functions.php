@@ -19,26 +19,29 @@ function artempol_add_script_function() {
 	/** 
 	* Enqueue css
 	*/
-	wp_enqueue_style( 'artempol-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'skin-style' , get_template_directory_uri() . '/css/skin.css' );
-	wp_enqueue_style( 'responsive-style' , get_template_directory_uri() . '/css/responsive.css' );
-	wp_enqueue_style( 'skin-responsive-style' , get_template_directory_uri() . '/css/skin.responsive.css' );
-	wp_enqueue_style( 'jssor-style' , get_template_directory_uri() . '/css/jssor.css' );
-	wp_enqueue_style( 'shortcodes-style' , get_template_directory_uri() . '/css/shortcodes.css' );
-	wp_enqueue_style( 'fontello-style' , get_template_directory_uri() . '/css/fontello/css/fontello.css' );
-	wp_enqueue_style( 'fontosc-style', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic' );
-	wp_enqueue_style( 'fontos-style', 'https://fonts.googleapis.com/css?family=Open+Sans:700&subset=latin,cyrillic' );
-	wp_enqueue_style( 'animation-style' , get_template_directory_uri() . '/css/animation.css' );
-	wp_enqueue_style( 'swiper' , get_template_directory_uri() . '/css/swiper.css' );
-	wp_enqueue_style( 'colorbox' , get_template_directory_uri() . '/libs/colorbox/colorbox.css' );
+	wp_enqueue_style( 'healthandcare', get_template_directory_uri() . '/css/healthandcare.css' );
+	wp_enqueue_style( 'skin', get_template_directory_uri() . '/css/skin.css' );
+	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/responsive.css' );
+	wp_enqueue_style( 'skin-responsive', get_template_directory_uri() . '/css/skin.responsive.css' );
+	wp_enqueue_style( 'artempol', get_stylesheet_uri() );
+	wp_enqueue_style( 'artempol-responsive', get_template_directory_uri() . '/css/artempol.responsive.css' );
+	wp_enqueue_style( 'jssor', get_template_directory_uri() . '/css/jssor.css' );
+	wp_enqueue_style( 'shortcodes', get_template_directory_uri() . '/css/shortcodes.css' );
+	wp_enqueue_style( 'fontello', get_template_directory_uri() . '/css/fontello/css/fontello.css' );
+	wp_enqueue_style( 'animation', get_template_directory_uri() . '/css/animation.css' );
+	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/libs/flexslider/flexslider.css' );
+	wp_enqueue_style( 'colorbox', get_template_directory_uri() . '/libs/colorbox/colorbox.css' );
+	wp_enqueue_style( 'fontosc', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic' );
+	wp_enqueue_style( 'fontos', 'https://fonts.googleapis.com/css?family=Open+Sans:700&subset=latin,cyrillic' );
 	/** 
 	 * Enqueue javascripts
 	 */
+//	wp_enqueue_script( 'noconflict', get_template_directory_uri() . '/js/noconflict.js', array( 'jquery' ) );
 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'colorbox', get_template_directory_uri() . '/libs/colorbox/jquery.colorbox-min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ) );
 	wp_enqueue_script( 'cs', get_template_directory_uri() . '/js/shortcodes.js', array( 'jquery' ) );
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.jquery.js', array( 'jquery' ) );
+	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/libs/flexslider/jquery.flexslider.js', array( 'jquery' ) );	
 	wp_enqueue_script( 'init', get_template_directory_uri() . '/js/init.js', array( 'jquery' ) );
 
 }
@@ -183,7 +186,7 @@ function question_form_term( $array ) {
 }; 
 
 // Хлебные крошки
-function artempol_breadcrumbs( $delimiter = '', $a_class = '', $cur_before = '', $cur_after = '', $before = '', $after = '' ) {
+function artempol_breadcrumbs( $delimiter = '', $a_class = '', $before_cur = '', $after_cur = '', $before_a = '', $after_a = '' ) {
 	
 	$a_class != '' ? ( $class = ' class="' . $a_class . '"' ) : ( $class = '' );	
 	$crumbs = '<a' . $class . ' href="' . esc_url( home_url() ) . '">' . __( 'Home', 'healthandcare' ) . '</a>';	
@@ -212,11 +215,16 @@ function artempol_breadcrumbs( $delimiter = '', $a_class = '', $cur_before = '',
 				}
 			}
 			
-			$crumbs .= $cur_before . get_the_title() . $cur_after;
+			$crumbs .= $before_cur . get_the_title() . $after_cur;
 		}
 		
 		else {
+			$taxonomy_obj = get_taxonomy( $taxonomy );	
+			$taxonomy_labels = $taxonomy_obj->labels;		
 			$term = get_queried_object();
+			
+			$crumbs .= '<a' . $class . ' href="/' . $taxonomy . '/">' . $taxonomy_labels->name . '</a>';
+			$crumbs .= $delimiter;
 			
 			if ( $term ) {
 				$parents = array();
@@ -231,12 +239,12 @@ function artempol_breadcrumbs( $delimiter = '', $a_class = '', $cur_before = '',
 					$parents = array_reverse( $parents );
 						
 					foreach ( $parents as $parent ) {						
-						$crumbs .= '<a' . $class . ' href="' . get_term_link( $parent->term_id, $taxonomy ) . '">' . $parent->name . '</a></li><li class="separator"> / </li><li>';				
+						$crumbs .= '<a' . $class . ' href="' . get_term_link( $parent->term_id, $taxonomy ) . '">' . $parent->name . '</a>';				
 						$crumbs .= $delimiter;
 					}
 				}
 
-				$crumbs .= $cur_before . $term->name . $cur_after;		
+				$crumbs .= $before_cur . $term->name . $after_cur;		
 			}				
 		}
 	}
@@ -253,7 +261,7 @@ function artempol_breadcrumbs( $delimiter = '', $a_class = '', $cur_before = '',
 			}
 		}
 	
-		$crumbs .= $cur_before . get_the_title() . $cur_after;
+		$crumbs .= $before_cur . get_the_title() . $after_cur;
 	}
 	
 	return $crumbs;	
