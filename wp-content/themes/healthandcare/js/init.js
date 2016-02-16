@@ -124,40 +124,20 @@ function healthandcare_ready_actions() {
 	
 	jQuery( '.slider-achieve' ).flexslider( {
 		animation: "slide",
+//		animationSpeed: 1000000000000000000,
+		slideshowSpeed: 10000000,
+		itemWidth: 300,
+		maxItems: 1,
 	} );
-  
-/*    var mainSwiper = new Swiper( '.slider-main', {
-//		autoplay: 3600,
-	    centeredSlides: true,
-	    nextButton: '.swiper-button-prev',
-	    prevButton: '.swiper-button-next',
-	    pagination: '.swiper-pagination',
-	    paginationClickable: true,
-	    loop: true,
-    });
-    
-    // Team Slider  
-    var teamSwiper = new Swiper( '.slider-team', {
-	    slidesPerView: 'auto',
-	    centeredSlides: false,
-	    nextButton: '.slider-team .swiper-button-prev',
-	    prevButton: '.slider-team .swiper-button-next',
-	    pagination: '.slider-team .swiper-pagination',
-	    paginationClickable: true,
-		spaceBetween: 30,
-	    loop: true,
-    });
-    
-    // Achievements Swiper  
-    var achievementsSwiper = new Swiper( '.slider-achieve', {
-	    slidesPerView: 'auto',
-	    centeredSlides: true,
-	    nextButton: '.slider-achieve .swiper-button-prev',
-	    prevButton: '.slider-achieve .swiper-button-next',
-	    pagination: '.slider-achieve .swiper-pagination',
-	    paginationClickable: true,
-	    loop: true,
-    });*/
+	
+	jQuery( '.slider-team' ).flexslider( {
+		animation: "slide",
+//		animationSpeed: 1000000000000000000,
+		slideshowSpeed: 10000000,
+		itemWidth: 320,
+//		itemMargin: 30,
+		maxItems: 4,
+	} );
     
     jQuery( 'a.colorbox, .gallery a' ).colorbox();
 }
@@ -241,7 +221,7 @@ function healthandcare_responsive_menu() {
   
     if (healthandcare_is_responsive_need( 768 )) {
         
-	if (!jQuery('body').hasClass('responsive_menu')) {
+		if (!jQuery('body').hasClass('responsive_menu')) {
             jQuery('body').removeClass('top_panel_fixed').addClass('responsive_menu');
             if (jQuery('body').hasClass('menu_relayout'))
                 jQuery('body').removeClass('menu_relayout');
@@ -252,13 +232,14 @@ function healthandcare_responsive_menu() {
                 jQuery('ul.menu_side_nav').removeClass('inited').superfish('destroy');
             }
         }
+		jQuery( 'ul.menu_main' ).hide();
     } 
     else {
         if (jQuery('body').hasClass('responsive_menu')) {
             jQuery('body').removeClass('responsive_menu');
             jQuery('.menu_main_responsive').hide();
-	    healthandcare_init_sfmenu();
-            jQuery('.menu_main_nav_area').show();
+			healthandcare_init_sfmenu();
+            jQuery('.menu_main').show();
         }
     }
     if (!jQuery('.top_panel_wrap').hasClass('menu_show')) jQuery('.top_panel_wrap').addClass('menu_show');

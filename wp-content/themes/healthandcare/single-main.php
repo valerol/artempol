@@ -1,4 +1,5 @@
-<?php /*
+<?php
+ /*
 Template Name: Main page
 */ ?>
 <?php get_header(); ?>
@@ -18,7 +19,7 @@ Template Name: Main page
 						<?php if ( $slide[ 'link' ] ) $link[ $key ] = explode( '|', $slide[ 'link' ] ); ?>
 						
 						<?php if ( isset( $link[ $key ][ 0 ] ) && isset( $link[ $key ][ 1 ] ) ) : ?>
-							<a class="slider_button sc_button sc_button_square sc_button_style_filled sc_button_bg_link sc_button_size_large  sc_button_iconed icon-right-2" href="<?php echo $link[ $key ][ 1 ]; ?>"><?php echo $link[ $key ][ 0 ]; ?></a>
+							<a class="sc_button sc_button_style_filled" href="<?php echo $link[ $key ][ 1 ]; ?>"><?php echo $link[ $key ][ 0 ]; ?></a>
 						<?php endif; ?>
 					</div>				
 				</li>
@@ -28,101 +29,88 @@ Template Name: Main page
 <?php endif; ?>
 
 <?php if ( ot_get_option( 'show_greeting' ) == 'on' && ( ot_get_option( 'greeting' ) || ot_get_option( 'greeting_text' ) ) ) : // Приветствие ?>
-	<div class="wpb_wrapper greeting list-icon">
-		<div class="sc_content content_wrap home1_wide_block1 wow fadeInUp">
-			<div class="columns_wrap sc_columns columns_nofluid sc_columns_count_3">
-				
-				<?php if ( ot_get_option( 'greeting' ) ) : ?>
-					<div style="text-align:none;" class="column-1_2 sc_column_item sc_column_item_1 odd first">
-							<h1 class="sc_title sc_title_iconed">
-								
-								<?php if ( ot_get_option( 'greeting_icon' ) ) : ?>
-									<span class="sc_title_icon sc_title_icon_top sc_title_icon_small <?php echo ot_get_option( 'greeting_icon' ); ?>"></span>
-								<?php endif; ?>
-								
-								<?php echo ot_get_option( 'greeting' ); ?>
-							</h1>
+	<div class="content_wrap columns_wrap">
+	
+		<?php if ( ot_get_option( 'greeting' ) ) : ?>
+			<div style="text-align:none;" class="column-1_2">
+					<h1 class="greeting_title">
 						
-						<?php if ( ot_get_option( 'greeting_lead' ) ) : ?>
-							<h6 class="sc_title sc_title_regular"><?php echo ot_get_option( 'greeting_lead' ); ?></h6>
+						<?php if ( ot_get_option( 'greeting_icon' ) ) : ?>
+							<span class="left red <?php echo ot_get_option( 'greeting_icon' ); ?>"></span>
 						<?php endif; ?>
-					</div>
-				<?php endif; ?>
-				
-				<?php if ( ot_get_option( 'greeting_text' ) ) : ?>
-					<div style="text-align:none;" class="column-1_<?php echo ( ot_get_option( 'greeting' ) ? '2' : '1' ); ?> sc_column_item sc_column_item_2 even span_2">
-						<div class="wpb_text_column wpb_content_element ">
-							<div class="wpb_wrapper">
-								<?php echo ot_get_option( 'greeting_text' ); ?>
-							</div>
-						</div>
 						
-						<?php if ( ot_get_option( 'greeting_link' ) ) : ?>
-							<a class="sc_button sc_button_square sc_button_style_border sc_button_bg_user sc_button_size_small sc_button_iconed icon-right-2" href="<?php echo the_permalink( ot_get_option( 'greeting_link' ) ); ?>"><?php echo ( ot_get_option( 'greeting_ancor' ) ? ot_get_option( 'greeting_ancor' ) : get_the_title( ot_get_option( 'greeting_link' ) ) ); ?></a>
-						<?php endif; ?>
-					</div>
+						<?php echo ot_get_option( 'greeting' ); ?>
+					</h1>
+				
+				<?php if ( ot_get_option( 'greeting_lead' ) ) : ?>
+					<h6><?php echo ot_get_option( 'greeting_lead' ); ?></h6>
 				<?php endif; ?>
 			</div>
-		</div>
+		<?php endif; ?>
+		
+		<?php if ( ot_get_option( 'greeting_text' ) ) : ?>
+			<div class="column-1_<?php echo ( ot_get_option( 'greeting' ) ? '2' : '1' ); ?>">
+				<?php echo ot_get_option( 'greeting_text' ); ?>
+				
+				<?php if ( ot_get_option( 'greeting_link' ) ) : ?>
+					<a class="sc_button sc_button_style_border sc_button_size_small" href="<?php echo the_permalink( ot_get_option( 'greeting_link' ) ); ?>">
+						<?php echo ( ot_get_option( 'greeting_ancor' ) ? ot_get_option( 'greeting_ancor' ) : get_the_title( ot_get_option( 'greeting_link' ) ) ); ?>
+					</a>
+				<?php endif; ?>
+			</div>
+		<?php endif; ?>
 	</div>
 <?php endif; ?>
 
 <?php if ( ot_get_option( 'show_colorblocks' ) == 'on' && ( ot_get_option( 'colorblock_1_title' ) ||  ot_get_option( 'colorblock_2_title' ) || ot_get_option( 'colorblock_3_title' ) || ot_get_option( 'colorblock_4_title' ) ) ) : // Цветные информационные блоки ?>
-	<div class="wpb_wrapper">
-		<div style="margin-top:5rem !important;margin-bottom:4.61538rem !important;" class="sc_content content_wrap wow fadeInUp">
-			<div data-slides-per-view="4" data-interval="7000" style="width:100%;" class="sc_services sc_services_style_services-1 sc_services_type_icons sc_slider_nopagination sc_slider_nocontrols" id="sc_services_1344188713">
-				<div class="sc_columns columns_wrap">
-			
-					<?php for( $cb_counter = 1; $cb_counter < 5; $cb_counter++ ) : ?>
-						
-						<?php if ( ot_get_option( 'colorblock_' . $cb_counter . '_title' ) ) : ?>
-							<div class="column-1_4 column_padding_bottom">
-								<div class="sc_services_item sc_services_item_<?php echo $cb_counter; ?>">
-									<h4 class="sc_services_item_title">
-										<span class="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_icon' ); ?>"></span>
-										<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_title' ); ?>
-									</h4>							
-									<div class="sc_services_item_content">
-										<div class="sc_services_item_description">
-											<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_text' ); ?>
-										</div>
-										<a class="sc_services_item_readmore" href="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_link' ); ?>">
-											Подробнее
-											<span class="icon-right-2"></span>
-										</a>
+	<div class="content_wrap columns_wrap wow fadeInUp">
+		<div class="sc_services columns_wrap">		
+				<?php for( $cb_counter = 1; $cb_counter < 5; $cb_counter++ ) : ?>
+					
+					<?php if ( ot_get_option( 'colorblock_' . $cb_counter . '_title' ) ) : ?>
+						<div class="column-1_4 column_padding_bottom">
+							<div class="sc_services_item sc_services_item_<?php echo $cb_counter; ?>">
+								<h4 class="sc_services_item_title">
+									<span class="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_icon' ); ?>"></span>
+									<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_title' ); ?>
+								</h4>							
+								<div class="sc_services_item_content">
+									<div class="sc_services_item_description">
+										<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_text' ); ?>
 									</div>
+									<a class="sc_services_item_readmore" href="<?php echo ot_get_option( 'colorblock_' . $cb_counter . '_link' ); ?>">
+										Подробнее
+										<span class="icon-right-2"></span>
+									</a>
 								</div>
 							</div>
-						<?php endif; ?>
-					<?php endfor; ?>
-				</div>
-			</div>
+						</div>
+					<?php endif; ?>
+				<?php endfor; ?>
 		</div>
 	</div>
 <?php endif; ?>
 
 <?php if ( ot_get_option( 'show_achievements' ) == 'on' ) : // Грамоты ?>
 	<?php get_template_part( 'colored_line' ); ?>
-	<footer class="testimonials_wrap sc_section scheme_original wow fadeInUp">
-			<!-- Slider main container -->
-			<div class="slider-achieve flexslider" style="height: 312px;">
-				<!-- Additional required wrapper -->
-				<ul class="slides">
-					<?php if ( ot_get_option( 'achievements_page' ) ) $images = get_attached_media( 'image', ot_get_option( 'achievements_page' ) );  // get images ?>
-					
-					<?php if ( $images ) : // show images ?>
+		<!-- Slider main container -->
+		<div class="slider-achieve flexslider" style="height: 312px;">
+			<!-- Additional required wrapper -->
+			<ul class="slides">
+				<?php if ( ot_get_option( 'achievements_page' ) ) $images = get_attached_media( 'image', ot_get_option( 'achievements_page' ) );  // get images ?>
+				
+				<?php if ( $images ) : // show images ?>
 
-						<?php foreach ( $images as $post ) :  setup_postdata( $post ); ?>				
-							<?php $image = image_downsize( $post->ID, 'medium' ); ?>
-							<li>
-								<a class="colorbox" href="<?php echo $post->guid ?>"><img src="<?php echo $image[ 0 ] ?>" style="margin-left: -<?php echo ( $image[ 1 ] / 2 ); ?>px;"></a>
-							</li>	
-						<?php endforeach; ?>				
-						<?php wp_reset_postdata(); ?>
-					<?php endif; ?>				
-				</ul>
-			</div>
-	</footer>
+					<?php foreach ( $images as $post ) :  setup_postdata( $post ); ?>				
+						<?php $image = image_downsize( $post->ID, 'medium' ); ?>
+						<li>
+							<a class="colorbox" href="<?php echo $post->guid ?>"><img src="<?php echo $image[ 0 ] ?>" style="margin-left: -<?php echo ( $image[ 1 ] / 2 ); ?>px;"></a>
+						</li>	
+					<?php endforeach; ?>				
+					<?php wp_reset_postdata(); ?>
+				<?php endif; ?>				
+			</ul>
+		</div>
 <?php endif; ?>
 
 <?php if ( ot_get_option( 'show_services' ) == 'on' ) : // Услуги ?>
@@ -150,39 +138,35 @@ Template Name: Main page
 			
 			<?php if ( $doctors = get_posts( array ( 'post_type' => 'doctor' ) ) ) : ?>
 				<!-- Slider main container -->
-				<div class="swiper-container slider-team content_wrap" style="height: 496px;">
-					<!-- Additional required wrapper -->
-					<div class="slides swiper-wrapper">
-
-						<?php foreach ( $doctors as $post ) : setup_postdata( $post ); ?>
-						
-							<?php if ( has_post_thumbnail() ) : ?>
-								<div class="swiper-slide">						
-									<div class="sc_team_item">								
+				<div class="content_wrap">
+					<div class="slider-team flexslider" style="height: 496px;">
+						<ul class="slides">
+							<!-- Additional required wrapper -->
+							<?php foreach ( $doctors as $post ) : setup_postdata( $post ); ?>
+							
+								<?php if ( has_post_thumbnail() ) : ?>			
+									<li class="sc_team_item">								
 										<?php $departments = get_the_terms( $post, 'department' ); ?>								
-										<?php $department = $departments[0]; ?>								
-										<a href="<?php echo get_term_link( $department, 'department' ); ?>">								
-											<div class=""><?php the_post_thumbnail( 'medium' ); ?></div>									
-											<div class="sc_team_item_info_container">	
-												<div class="sc_team_item_info">												
-													<h5 class="sc_team_item_title"><?php the_title(); ?></h5>									
-													<div class="sc_team_item_position"><?php the_excerpt(); ?></div>
-												</div>													
-											</div>								
-										</a>							
-									</div>
-								</div>						
-							<?php endif; ?>	
-						<?php endforeach; ?>
-						<?php wp_reset_postdata(); ?>				
+										<?php if ( isset ( $departments ) ) $department = $departments[ 0 ]; ?>
+										<?php if ( $department ) : ?>				
+											<a href="<?php echo get_term_link( $department, 'department' ); ?>">
+										<?php endif; ?>							
+												<?php the_post_thumbnail( 'medium' ); ?>							
+												<div class="sc_team_item_info_container">	
+													<div class="sc_team_item_info">												
+														<h5 class="sc_team_item_title"><?php the_title(); ?></h5>									
+														<div class="sc_team_item_position"><?php the_excerpt(); ?></div>
+													</div>													
+												</div>		
+										<?php if ( $department ) : ?>							
+											</a>
+										<?php endif; ?>							
+									</li>				
+								<?php endif; ?>	
+							<?php endforeach; ?>
+							<?php wp_reset_postdata(); ?>
+						</ul>
 					</div>
-					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>	
-					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev tp-leftarrow tparrows custom noSwipe"></div>
-					<div class="swiper-button-next tp-rightarrow tparrows custom noSwipe"></div>		
-					<!-- If we need scrollbar -->
-					<div class="swiper-scrollbar"></div>
 				</div>
 			<?php endif; ?>
 		</div>	
