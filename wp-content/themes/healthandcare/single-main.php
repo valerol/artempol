@@ -119,10 +119,8 @@ Template Name: Main page
 			<h1 style="margin-top:5.84615rem;margin-bottom:0.23076rem;text-align:center;" class="sc_title sc_title_regular sc_align_center">
 				<?php echo ot_get_option( 'services_title' ); ?>
 			</h1>
-			<h6 style="margin-bottom:3.76923rem;text-align:center;" class="sc_title sc_title_regular sc_align_center">
-				<?php echo ot_get_option( 'services_description' ); ?>
-			</h6>
-			<?php echo ot_get_option( 'services_1' ); ?>
+			<?php $services_post = get_post( ot_get_option( 'services_page' ) ); ?>
+			<?php echo $services_post->post_content; ?>
 		</div>
 	</div>
 <?php endif; ?>

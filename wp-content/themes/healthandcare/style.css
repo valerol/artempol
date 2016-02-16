@@ -1,11 +1,35 @@
-/* healthandcare & skin reset */
+/* healthandcare & skin & shortcodes reset */
+
+footer .contacts_address .address_left .address2_contact_info:before,
+footer .contacts_address .address_left .email_contact_info:before {
+	font-size: 2em;
+	top: 0 !important;
+}
+
 .sc_services .sc_services_item .sc_services_item_title .sc_icon {
-	left: 1.615rem;
+	left: 1em !important;
 }
 
 .sc_services .sc_services_item .sc_services_item_title .sc_icon, .sc_services_item .sc_icon::before {
-    font-size: 4rem !important;
-    margin-top: -7rem;
+    font-size: 1.5em !important;
+    margin-top: -0.5em;
+}
+
+.sc_services .sc_services_item .sc_services_item_title {
+	padding-left: 5em !important;
+}
+
+.sc_services_item_content,
+.slider-main {
+	color: #fff !important;
+}
+
+.sc_services_item .cs_icon {
+	line-height: 1em !important;
+}
+
+h2 {
+	margin-top: 0 !important;
 }
 
 .footer_banner {
@@ -109,7 +133,7 @@
 }
 
 .sub-menu {
-	top: 4.5em !important;
+	top: 2em !important;
     border-color: #8e91af;
     background-color: #ff5b4f;
     left: 0.6em;
@@ -265,7 +289,7 @@
 }
 
 .services, .greeting {
-	font-size: 1.1rem;
+	font-size: 1.1em;
 }
 
 .greeting ul {
@@ -283,12 +307,7 @@
 }
 
 .greeting .sc_title {
-	padding-left: 5rem;
-}
-
-
-.sc_services_item .sc_icon:before {
-    font-size: 2.2857em;
+	padding-left: 5em;
 }
 
 .services h1 {
@@ -351,19 +370,19 @@
 
 .team h2 {
 	margin-top: 0;
-	padding-top: 4rem;
+	padding-top: 1em;
 	color: white !important;
 }
 
 .team h6 {
     color: #7c7d8d !important;
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
 }
 
 .sc_team_item_info {
     background-color: rgba(255, 255, 255, 0.1);
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
     text-align: center;
 }
 
@@ -391,7 +410,7 @@
     width: 60px;
     z-index: 100;
     top: 50%;
-    line-height: 1rem;
+    line-height: 1em;
 	display: none;
 }
 

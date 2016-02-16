@@ -55,50 +55,50 @@ body {
 }
 h1 {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 3.462em;
+  font-size: 3.462rem;
   line-height: 1.3em;
   font-weight: 700;
-  margin-bottom: 1.61538em;
+  margin-bottom: 1.61538rem;
 }
 h2 {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 2.692em;
+  font-size: 2.692rem;
   line-height: 1.3em;
   font-weight: 700;
-  margin-top: 3.15384em;
-  margin-bottom: 0.92307em;
+  margin-top: 3.15384rem;
+  margin-bottom: 0.92307rem;
 }
 h3 {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.923em;
+  font-size: 1.923rem;
   line-height: 1.3em;
   font-weight: 700;
-#  margin-top: 3.38461em;
-  margin-bottom: 1.69230em;
+#  margin-top: 3.38461rem;
+  margin-bottom: 1.69230rem;
 }
 h4 {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.538em;
+  font-size: 1.538rem;
   line-height: 1.3em;
   font-weight: 700;
-  margin-top: 3.53846em;
-  margin-bottom: 1.30769em;
+  margin-top: 3.53846rem;
+  margin-bottom: 1.30769rem;
 }
 h5 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.385em;
+  font-size: 1.385rem;
   line-height: 1.3em;
   font-weight: 700;
-  margin-top: 3.23076em;
-  margin-bottom: 1.38461em;
+  margin-top: 3.23076rem;
+  margin-bottom: 1.38461rem;
 }
 h6 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.154em;
+  font-size: 1.154rem;
   line-height: 1.3em;
   font-weight: 700;
-  margin-top: 2.46153em;
-  margin-bottom: 0.92307em;
+  margin-top: 2.46153rem;
+  margin-bottom: 0.92307rem;
 }
 /* Normal state */
 .scheme_original h1,
@@ -1876,12 +1876,12 @@ input[type="checkbox"] + label:before {
   background-color: rgba(198, 200, 217, 0.75);
 }
 .top_panel_middle .logo {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   line-height: 4em;
 }
 .logo .logo_text {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   line-height: 1em;
   font-weight: 700;
 }
@@ -1910,7 +1910,7 @@ input[type="checkbox"] + label:before {
   color: #9b9cab;
 }
 .top_panel_style_5 .top_panel_middle .logo {
-  margin-bottom: 0.923075em;
+  margin-bottom: 0.923075rem;
 }
 /* Top panel (bottom area) */
 .scheme_original .top_panel_bottom {
@@ -5963,7 +5963,7 @@ input[type="checkbox"] + label:before {
 .scheme_colored .woocommerce-account .addresses .title .edit:hover {
   color: #ffffff;
 }
-/* emove button */
+/* Remove button */
 /* Messages */
 .scheme_original .article_style_boxed.woocommerce .woocommerce-error,
 .scheme_original .article_style_boxed.woocommerce .woocommerce-info,
@@ -10372,7 +10372,7 @@ button,
 }
 .sc_testimonials .sc_testimonial_content {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.923em;
+  font-size: 1.923rem;
   line-height: 1.3em;
   font-weight: 700;
 }
