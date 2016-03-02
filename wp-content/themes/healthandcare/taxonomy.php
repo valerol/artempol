@@ -2,20 +2,21 @@
 
 get_header();
 
-$branch = get_query_var( 'branches' );
+$taxonomy = '';
 
-$doctors = get_posts( 
-	array( 
-		'post_type' => 'doctor', 
+$term = get_query_var( $taxonomy );
+
+$posts = get_posts( 
+	array(
 		'tax_query' => 
 			array(	
 				array( 
-					'taxonomy' => 'branches', 
+					'taxonomy' => $taxonomy, 
 					'field' => 'id', 
-					'terms' => $branch ) ) ) ); 
+					'terms' => $term ) ) ) ); 
 
-if ( $doctors ) { 
-	foreach( $doctors as $post ) { 
+if ( $posts ) { 
+	foreach( $posts as $post ) { 
 		setup_postdata( $post ); ?>
 
 		<h2><?php the_title(); ?></h2>		

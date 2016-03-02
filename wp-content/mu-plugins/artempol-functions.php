@@ -19,28 +19,19 @@ function artempol_add_script_function() {
 	/** 
 	* Enqueue css
 	*/
-	wp_enqueue_style( 'healthandcare', get_template_directory_uri() . '/css/healthandcare.css' );
-	wp_enqueue_style( 'skin', get_template_directory_uri() . '/css/skin.css' );
-	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/responsive.css' );
-	wp_enqueue_style( 'skin-responsive', get_template_directory_uri() . '/css/skin.responsive.css' );
 	wp_enqueue_style( 'artempol', get_stylesheet_uri() );
-	wp_enqueue_style( 'artempol-responsive', get_template_directory_uri() . '/css/artempol.responsive.css' );
-	wp_enqueue_style( 'jssor', get_template_directory_uri() . '/css/jssor.css' );
-	wp_enqueue_style( 'shortcodes', get_template_directory_uri() . '/css/shortcodes.css' );
 	wp_enqueue_style( 'fontello', get_template_directory_uri() . '/css/fontello/css/fontello.css' );
 	wp_enqueue_style( 'animation', get_template_directory_uri() . '/css/animation.css' );
 	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/libs/flexslider/flexslider.css' );
 	wp_enqueue_style( 'colorbox', get_template_directory_uri() . '/libs/colorbox/colorbox.css' );
 	wp_enqueue_style( 'fontosc', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic' );
-	wp_enqueue_style( 'fontos', 'https://fonts.googleapis.com/css?family=Open+Sans:700&subset=latin,cyrillic' );
+	wp_enqueue_style( 'fontos', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext' );
 	/** 
 	 * Enqueue javascripts
 	 */
-//	wp_enqueue_script( 'noconflict', get_template_directory_uri() . '/js/noconflict.js', array( 'jquery' ) );
-	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js', array( 'jquery' ) );
 	wp_enqueue_script( 'colorbox', get_template_directory_uri() . '/libs/colorbox/jquery.colorbox-min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ) );
-	wp_enqueue_script( 'cs', get_template_directory_uri() . '/js/shortcodes.js', array( 'jquery' ) );
 	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/libs/flexslider/jquery.flexslider.js', array( 'jquery' ) );	
 	wp_enqueue_script( 'init', get_template_directory_uri() . '/js/init.js', array( 'jquery' ) );
 
@@ -189,7 +180,7 @@ function question_form_term( $array ) {
 function artempol_breadcrumbs( $delimiter = '', $a_class = '', $before_cur = '', $after_cur = '', $before_a = '', $after_a = '' ) {
 	
 	$a_class != '' ? ( $class = ' class="' . $a_class . '"' ) : ( $class = '' );	
-	$crumbs = '<a' . $class . ' href="' . esc_url( home_url() ) . '">' . __( 'Home', 'healthandcare' ) . '</a>';	
+	$crumbs = '<a' . $class . ' href="' . esc_url( home_url() ) . '">' . __( 'Главная' ) . '</a>';	
 	$crumbs .= $delimiter;
 	
 	if ( is_single() || is_category() || is_tax() ) {	
@@ -308,26 +299,70 @@ function artempol_mce_before_init( $settings ) {
             'selector' => 'a',
             'classes' => 'file icon-file-archive'
         ),
-        array(
-            'title' => 'Iconed list',
-            'selector' => 'li',
-            'classes' => 'sc_list_icon icon-checkbox'
-        ),
+
         array(
             'title' => '2 columns',
-            'selector' => 'li, p, div',
-            'classes' => 'column-1_2 columns'
+            'selector' => 'li, p',
+            'classes' => 'column col_1_2'
         ),        
         array(
             'title' => '3 columns',
-            'selector' => 'li, p, div',
-            'classes' => 'column-1_3 columns'
+            'selector' => 'li, p',
+            'classes' => 'column col_1_3'
         ),
         array(
             'title' => '4 columns',
-            'selector' => 'li, p, div',
-            'classes' => 'column-1_4 columns'
-        ),        
+            'selector' => 'li, p',
+            'classes' => 'column col_1_4'
+        ),      
+        
+        array(
+            'title' => '1-й цвет текста',
+            'selector' => 'p',
+            'classes' => 'textcolor_1'
+        ),  
+        
+        array(
+            'title' => '2-й цвет текста',
+            'selector' => 'p',
+            'classes' => 'textcolor_2'
+        ), 
+        
+        array(
+            'title' => '3-й цвет текста',
+            'selector' => 'p',
+            'classes' => 'textcolor_3'
+        ),  
+        
+        array(
+            'title' => '4-й цвет текста',
+            'selector' => 'p',
+            'classes' => 'textcolor_4'
+        ),   
+        
+        array(
+            'title' => 'без обтекания',
+            'selector' => 'p, h2, h3, h4',
+            'classes' => 'clear'
+        ), 
+        
+        array(
+            'title' => 'кнопка 2-го цвета',
+            'selector' => 'a',
+            'classes' => 'button color_2'
+        ), 
+        
+        array(
+            'title' => 'кнопка 3-го цвета',
+            'selector' => 'a',
+            'classes' => 'button color_3'
+        ), 
+        
+        array(
+            'title' => 'ссылка со стрелкой',
+            'selector' => 'a',
+            'classes' => 'arrow'
+        ), 
     );
 
     $settings[ 'style_formats' ] = json_encode( $style_formats );

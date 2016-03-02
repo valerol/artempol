@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyfifteen' ); ?></p>
+<p><?php _e( 'К сожалению, эта страница не существует или переехала. Попробуйте воспользоваться поиском.' ); ?></p>
 
 <?php get_search_form(); ?>
 

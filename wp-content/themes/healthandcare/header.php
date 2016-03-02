@@ -3,7 +3,7 @@
 <!--[if lte IE 8]>    
 <html class="ie8 scheme_original"> 
 <![endif]--> 
-<html class="scheme_original" <?php language_attributes(); ?> >
+<html class="scheme_<?php echo ot_get_option( 'scheme', 'original' ) ?>" <?php language_attributes(); ?> >
 
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -14,91 +14,91 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="icon" type="image/x-icon" href="" />
+	<!--[if IE 8]>    
+	<style type="text/css">.content_wrap{width:1170px;margin:0 auto}.logo{width:20%}.menu_main.fullsize{width:80%}h1,h2,h3,h4,h5{padding:1em 0}.col_1_2{width:50%}.col_1_3{width:33.3%}.col_2_3{width:66.6%}.col_3_4{width:75%}.col_1_4{width:25%}.page_title,.breadcrumbs{width: 49%}.login{display:none}.contacts .address{border-right:1pt solid #8e91af}</style>
+	<![endif]--> 	
+	<!--[if IE 7]>    
+	<style type="text/css">.colored_line,.flexslider,.login{display:none}.content_wrap{width:1170px;margin:0 auto}.contacts{height:60pt}.contacts .address{border-right:1pt solid #8e91af}.col_1_2{width:585px}.col_1_3{width:390px}.col_2_3{width:780px}.col_3_4{width:877.5px}.col_1_4{width:292.5px}</style>
+	<![endif]--> 
     <?php wp_head(); ?>
 </head>
 
 <body>
-	<header>
-		<div class="top_panel_top">
-			<div class="content_wrap clearfix">
-				<div class="left">
-					<span class="contact icon-phone"><?php echo ot_get_option( 'header_phone' ); ?></span>
-					<span class="contact icon-home"><?php echo ot_get_option( 'header_address' ); ?></span>
-					<span class="contact icon-clock"><?php echo ot_get_option( 'header_working_hours' ); ?></span>
-				</div>
-				<div class="right">
-					<?php if ( ! is_user_logged_in() ) : ?>
-						<a href="#popup_login" class="popup_link popup_login_link icon-user"><?php esc_html_e( 'Login', 'healthandcare' ); ?></a>
+	<div class="header">
+		<div class="clearfix">
+			<div class="top_panel_top padding_tb_10">
+				<div class="content_wrap clearfix">
+					<div class="address left">
+						<span class="contact icon-phone"><?php echo ot_get_option( 'top_phone' )?></span>
+						<span class="contact icon-home"><?php echo ot_get_option( 'top_address' )?></span>
+						<span class="contact icon-clock"><?php echo ot_get_option( 'top_time' )?></span>
+					</div>
+					<div class="login right">
+						<?php if ( ! is_user_logged_in() ) : ?>
+							<a href="#popup_login" class="popup_link icon-user"><?php esc_html_e( 'Войти', 'healthandcare' ); ?></a>
 
-						<div id="popup_login" class="popup_wrap popup_login bg_tint_light">
-							<a href="#" class="popup_close"></a>
-							<div class="form_wrap">
-								<div class="form_left">
-									<form action="<?php echo wp_login_url(); ?>" method="post" name="login_form" class="popup_form login_form">
-										<input type="hidden" name="redirect_to" value="<?php echo esc_url( home_url('/') ); ?>">
-										<div class="popup_form_field login_field iconed_field icon-user"><input type="text" id="log" name="log" value="" placeholder="<?php esc_html_e('Login or Email', 'healthandcare'); ?>"></div>
-										<div class="popup_form_field password_field iconed_field icon-lock"><input type="password" id="password" name="pwd" value="" placeholder="<?php esc_html_e('Password', 'healthandcare'); ?>"></div>
-										<div class="popup_form_field remember_field">
-											<a href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" class="forgot_password"><?php esc_html_e('Forgot password?', 'healthandcare'); ?></a>
-											<input type="checkbox" value="forever" id="rememberme" name="rememberme">
-											<label for="rememberme"><?php esc_html_e('Remember me', 'healthandcare'); ?></label>
-										</div>
-										<div class="popup_form_field submit_field"><input type="submit" class="submit_button" value="<?php esc_html_e('Login', 'healthandcare'); ?>"></div>
-									</form>
-								</div>
-							</div>	<!-- /.login_wrap -->
-						</div>		<!-- /.popup_login -->
-					<?php else : $current_user = wp_get_current_user(); ?>
-						<a href="<?php echo wp_logout_url( esc_url( home_url('/') ) ); ?>" class="icon icon-logout"><?php esc_html_e( 'Logout', 'healthandcare' ); ?></a>
-					<?php endif; ?>
+							<div id="popup_login" class="popup_wrap color_2 popup_login">
+								<a href="#" class="popup_close"></a>
+								<form action="<?php echo wp_login_url(); ?>" method="post" name="login_form">
+									<input type="hidden" name="redirect_to" value="<?php echo esc_url( home_url('/') ); ?>">
+									<span class="icon-user"></span><input type="text" id="log" name="log" value="" placeholder="<?php esc_html_e( 'Логин или e-mail' ); ?>">
+									<span class="icon-lock"></span><input type="password" id="password" name="pwd" value="" placeholder="<?php esc_html_e( 'Пароль' ); ?>">				
+									<p>
+										<a href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" class="forgot_password"><?php esc_html_e( 'Забыли пароль?' ); ?></a>
+										<input type="checkbox" value="forever" id="rememberme" name="rememberme">
+										<label for="rememberme"><?php esc_html_e( 'Запомнить меня' ); ?></label>
+									</p>									
+									<input type="submit" class="button color_2" value="<?php esc_html_e( 'Войти' ); ?>">
+								</form>
+							</div>		<!-- /.popup_login -->
+						<?php else : $current_user = wp_get_current_user(); ?>
+							<a href="<?php echo wp_logout_url( esc_url( home_url('/') ) ); ?>" class="icon icon-logout"><?php esc_html_e( 'Выйти', 'healthandcare' ); ?></a>
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
 		</div>			
 		
-		<?php get_template_part( 'colored_line' ); ?>		
+		<div class="nav">
+			<?php get_template_part( 'colored_line' ); ?>		
 
-			<div class="content_wrap columns_wrap">
-					<div class="column-1_4 contact_logo">
-						<div class="logo">
-								
-							<?php if ( ! is_front_page() ) : ?> 
-								<a href="<?php echo home_url(); ?>"> 
-							<?php endif; ?>
-							
-							<span class="icon-user-md left"></span>
-							<?php echo ot_get_option( 'header_logo_text' ); ?>
-							
-							<?php if ( ! is_front_page() ) : ?> 
-								</a>						
-							<?php endif; ?>
-						</div>
-					</div>
-					<div class="right column-3_4">
-						<a class="menu_main_responsive_button icon-menu" href="#"></a>
-						<?php wp_nav_menu( array ( 
-							'menu' 				=> 'main', 
-							'container' 		=> '',
-							'container_class' 	=> '',
-							'menu_class' 		=> 'menu_main',
-							'menu_id'         	=> 'menu_main',
-							'fallback_cb'     	=> 'wp_page_menu', ) ); ?>				
-						<?php wp_nav_menu( array ( 
-							'menu' 				=> 'main', 
-							'container' 		=> '',
-							'container_class' 	=> '',
-							'menu_class' 		=> 'menu_main_responsive',
-							'menu_id'         	=> '',
-							'fallback_cb'     	=> 'wp_page_menu', ) ); ?>				
-					</div>
+			<div class="content_wrap clearfix">
+				<div class="logo left">
+					<p class="iconed textcolor_2"><span>
+					
+					<?php if ( ! is_front_page() ) : ?> 
+						<a href="<?php echo home_url(); ?>"> 
+					<?php endif; ?>
+					
+					Артёмовская поликлиника
+					
+					<?php if ( ! is_front_page() ) : ?> 
+						</a>						
+					<?php endif; ?>
+					
+					</span></p>
+				</div>
+				<a class="menu_main_responsive_button icon-menu" href="#"></a>
+				<?php wp_nav_menu( array ( 
+					'menu' 				=> 'main', 
+					'container' 		=> '',
+					'container_class' 	=> '',
+					'menu_class' 		=> 'menu_main fullsize right',
+					'menu_id'         	=> 'menu_main',
+					'fallback_cb'     	=> 'wp_page_menu', ) ); ?>
 			</div>
-	</header>
+		</div>
+			<?php wp_nav_menu( array ( 
+				'menu' 				=> 'main', 
+				'container' 		=> '',
+				'container_class' 	=> '',
+				'menu_class' 		=> 'menu_main responsive',
+				'menu_id'         	=> '',
+				'fallback_cb'     	=> 'wp_page_menu', ) ); ?>
+	</div>
 	
 	<?php if( ! is_front_page() ) : ?>				
 		<?php get_template_part( 'breadcrumbs' ); ?>				
 		<!-- content begin -->				
-		<div class="content_wrap content">				
+		<div class="content_wrap padding_tb_20">				
 	<?php endif; ?>
-
-<?php //var_dump($wp_query); ?>
-<?php //echo esc_attr(wp_create_nonce('ajax_nonce')); ?>
-<?php //echo esc_url(admin_url('admin-ajax.php')); ?>

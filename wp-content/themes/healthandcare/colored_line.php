@@ -1,6 +1,6 @@
-<div class="colored_line">
-	<div class="color1"></div>
-	<div class="color2"></div>
-	<div class="color3"></div>
-	<div class="color4"></div>
+<div class="colored_line clearfix">
+	<div class="color_1"></div>
+	<div class="color_2"></div>
+	<div class="color_3"></div>
+	<div class="color_4"></div>
 </div> 
