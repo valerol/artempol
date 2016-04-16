@@ -1,0 +1,22 @@
+[24-Feb-2016 02:18:01 UTC] PHP Parse error:  syntax error, unexpected $end in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/page.php on line 47
+[26-Feb-2016 02:57:09 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Lost connection to MySQL server at 'sending authentication information', system error: 32 in /home/yogadv/public_html/artempol/wp-includes/wp-db.php on line 1518
+[26-Feb-2016 03:18:51 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/yogadv/public_html/artempol/wp-includes/wp-db.php on line 1518
+[26-Feb-2016 03:18:51 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/yogadv/public_html/artempol/wp-includes/wp-db.php on line 1518
+[26-Feb-2016 23:47:39 UTC] PHP Fatal error:  Call to undefined function ot_get_option() in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/header.php on line 6
+[26-Feb-2016 23:48:39 UTC] PHP Fatal error:  Call to undefined function ot_get_option() in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/header.php on line 6
+[26-Feb-2016 23:48:41 UTC] PHP Fatal error:  Call to undefined function ot_get_option() in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/header.php on line 6
+[26-Feb-2016 23:48:50 UTC] PHP Fatal error:  Call to undefined function ot_get_option() in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/header.php on line 6
+[26-Feb-2016 23:48:54 UTC] PHP Fatal error:  Call to undefined function ot_get_option() in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/header.php on line 6
+[04-Mar-2016 12:28:01 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/yogadv/public_html/artempol/wp-includes/wp-db.php on line 1518
+[07-Mar-2016 00:15:05 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/category.php on line 33
+[13-Mar-2016 04:48:19 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 12:19:33 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 12:24:07 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 12:25:23 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 12:44:22 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 12:44:31 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 12:49:48 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 13:00:26 UTC] PHP Notice:  Trying to get property of non-object in /home/yogadv/public_html/artempol/wp-content/mu-plugins/artempol-functions.php on line 156
+[13-Mar-2016 18:52:42 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/category.php on line 33
+[13-Mar-2016 20:49:16 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/yogadv/public_html/artempol/wp-includes/wp-db.php on line 1518
+[14-Mar-2016 12:17:37 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/yogadv/public_html/artempol/wp-content/themes/healthandcare/category.php on line 33
