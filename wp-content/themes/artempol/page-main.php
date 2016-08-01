@@ -63,7 +63,7 @@ if ( $doctors ) {
 }
 
 // News
-$news = artempol_get_posts( 'news-list', array( 'category_name' => 'news', 'posts_per_page' => get_theme_mod( 'news-main-number', 2 ) ), array( 'image', 'title', 'url', 'date', 'description' ) );
+$news = artempol_get_posts( 'news-list', array( 'category_name' => 'news', 'posts_per_page' => get_theme_mod( 'news-main-number', 2 ) ), array( 'image', 'title', 'url', 'date', 'content' ) );
 
 if ( $news ) {
 	$heading = artempol_container( array( 'tag' => 'h2', 'content' => __( 'News', 'artempol' ) ) );
@@ -72,14 +72,10 @@ if ( $news ) {
 }
 
 // Banners
-$banners = get_posts( array( 'category' => 'banners' ) );
+$banners = get_posts( array( 'category_name' => 'banners' ) );
 
 if ( !empty( $banners ) ) {
-	$banners = artempol_get_post( $banners[ 0 ], 'banner', array( 'title', 'content' ) );
-}
-
-if ( $banners ) {
-	echo $banners;
+	echo artempol_get_post( $banners[ 0 ], 'banner', array( 'title', 'content' ) );
 }
 
 // Footer

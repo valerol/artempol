@@ -83,7 +83,7 @@ function artempol_get_template( $template ) {
 				<p class="post_info">
 					<span class="post_info_item post_info_posted">%DATE%</span>
 				</p>
-				<p class="content">%DESCRIPTION%</p>							
+				%CONTENT%				
 			</div>
 		</div>
 	</div>

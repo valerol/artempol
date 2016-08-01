@@ -446,6 +446,14 @@ a.arrow:hover::after {
 	padding: 20pt 0;
 }
 
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
 /* Шапка */
 
 .top_panel_top {
