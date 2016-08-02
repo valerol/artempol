@@ -18,6 +18,15 @@ if ( have_posts() ) {
 	echo $greeting;
 }
 
+// News
+$news = artempol_get_posts( 'news-list', array( 'category_name' => 'news', 'posts_per_page' => get_theme_mod( 'news-main-number', 2 ) ), array( 'image', 'title', 'url', 'date', 'content' ) );
+
+if ( $news ) {
+	$heading = artempol_container( array( 'tag' => 'h2', 'content' => __( 'News', 'artempol' ) ) );
+	$news = artempol_container( array( 'tag' => 'div', 'content' => $heading . $news, 'class' => 'content_wrap news padding_tb_20 wow fadeInUp' ) );
+	echo $news;
+}
+
 // Colored_blocks
 $colored_blocks = artempol_get_posts( 'colored', array( 'category_name' => 'colorblocks' ), array( 'counter', 'title', 'content' ) );
 
@@ -60,15 +69,6 @@ if ( $doctors ) {
 	$doctors = artempol_container( array( 'tag' => 'div', 'content' => $headings . $doctors, 'class' => 'team wow fadeInUp' ) );
 	$doctors = artempol_container( array(), 'line' ) . $doctors;
 	echo $doctors;
-}
-
-// News
-$news = artempol_get_posts( 'news-list', array( 'category_name' => 'news', 'posts_per_page' => get_theme_mod( 'news-main-number', 2 ) ), array( 'image', 'title', 'url', 'date', 'content' ) );
-
-if ( $news ) {
-	$heading = artempol_container( array( 'tag' => 'h2', 'content' => __( 'News', 'artempol' ) ) );
-	$news = artempol_container( array( 'tag' => 'div', 'content' => $heading . $news, 'class' => 'content_wrap news padding_tb_20 wow fadeInUp' ) );
-	echo $news;
 }
 
 // Banners
